@@ -80,3 +80,17 @@ a.tile:hover{transform:translateY(-4px);border-color:transparent;box-shadow:0 10
 footer{background:#06150e}
 .frieze{background:#06150e;height:26px}
 @media(prefers-reduced-motion:no-preference){.hero h1{animation:rise .8s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(18px)}}}
+.util{background:#06150e;border-bottom:0}
+.util a{color:#a9c2b4}
+.util a:hover{color:#fff}
+.sbtn{color:var(--albero)}
+.sbtn:hover{background:#ffffff1a}
+.search{background:var(--blue-d);border-top-color:#ffffff22}
+.search input{background:#ffffff12;border-color:#ffffff33;color:#fff}
+.search input::placeholder{color:#a9c2b4}
+.search input:focus{border-color:var(--albero)}
+.sres a{color:#fff}
+.sres a span,.sres .none{color:#bcd3c5}
+.sres a:hover,.sres a:focus{background:#ffffff14}
+details.acc{border:0;background:var(--tile);border-radius:18px}
+details.acc[open]>summary{border-bottom-color:var(--line)}

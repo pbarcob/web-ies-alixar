@@ -63,3 +63,9 @@ a.tile:hover{border-color:var(--blue);background:var(--tile)}
 footer{background:var(--blue-d)}
 .frieze{height:4px;background:var(--albero)}
 .frieze svg{display:none}
+.util{background:var(--blue-d);border-bottom:0}
+.util a{color:#d8e3dc}
+.util a:hover{color:#fff}
+.sbtn{border-radius:2px}
+.search input{border-radius:2px;font-family:"Source Sans 3",system-ui,sans-serif}
+details.acc{border-radius:0}

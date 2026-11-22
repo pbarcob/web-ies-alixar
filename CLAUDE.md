@@ -14,4 +14,7 @@ Web publicada con GitHub Pages: https://pbarcob.github.io/web-ies-alixar/ (rama 
 - Secretaría: horario (días lectivos, de 9:00 a 14:00), indicaciones generales y enlaces oficiales. Sin plazas vacantes ni datos que ya publica la Junta.
 - Instagram (@ies_alixar y @BiblioAlixar): con protagonismo en portada, con enlace a las cuentas y con las últimas publicaciones cargadas solas (`FEEDS`, feeds JSON de Behold). Sin página propia.
 - Plan de Centro: carpeta de Drive incrustada.
-- Menú: Inicio · El centro · Secretaría · ESO y Bachillerato · Formación Profesional · ACREDITA · Convivencia.
+- Menú: Inicio · El centro · Secretaría · Familias · Alumnado · ESO y Bachillerato · Formación Profesional · ACREDITA · Convivencia, más buscador e Instagram. Barra superior: Preguntas frecuentes · Calendario · Profesorado · Transparencia · Otros idiomas.
+- Avisos de portada: cada `<li>` del recuadro de avisos lleva `data-hasta="AAAA-MM-DD"` y desaparece solo al día siguiente de esa fecha. Todo aviso nuevo debe llevar fecha de caducidad.
+- No se inventan datos: lo que no conste en los documentos del centro o en fuentes oficiales se pregunta a la dirección antes de publicarlo.
+- La página «Otros idiomas» (inglés, francés y árabe) debe actualizarse cuando cambien horario, dirección o canales de contacto.
