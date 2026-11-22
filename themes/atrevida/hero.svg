@@ -1,0 +1,17 @@
+ <svg class="scene" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice" role="img" aria-label="El castillo del escudo del IES Alixar sobre la loma del Aljarafe">
+  <rect width="1200" height="420" fill="#0c3b2a"/>
+  <circle cx="760" cy="150" r="190" fill="#14553b"/>
+  <circle cx="760" cy="150" r="120" fill="#1b6646"/>
+  <g stroke="#f5c518" stroke-width="3" opacity=".35"><path d="M80 30h20"/><path d="M120 30h20"/><path d="M160 30h20"/><path d="M200 30h20"/><path d="M240 30h20"/><path d="M280 30h20"/></g>
+  <path d="M0 330 C220 280,420 250,640 262 C860 274,1040 300,1200 290 V420 H0Z" fill="#12a44a"/>
+  <path d="M0 360 C260 320,520 312,760 322 C960 330,1100 348,1200 340 V420 H0Z" fill="#0f8a3e"/>
+  <g transform="translate(-170 0)">  <path d="M560 170 L560.0 152 L586.7 152 L586.7 170 L613.3 170 L613.3 152 L640.0 152 L640.0 170 L640 300 L560 300Z" fill="#f5c518"/><path d="M610 170 L640 170 L640 300 L610 300Z" fill="#d9a90f"/>
+  <path d="M630 200 L630.0 182 L645.5 182 L645.5 200 L660.9 200 L660.9 182 L676.4 182 L676.4 200 L691.8 200 L691.8 182 L707.3 182 L707.3 200 L722.7 200 L722.7 182 L738.2 182 L738.2 200 L753.6 200 L753.6 182 L769.1 182 L769.1 200 L784.5 200 L784.5 182 L800.0 182 L800.0 200 L800 296 L630 296Z" fill="#f7d23e"/><path d="M735 200 L800 200 L800 296 L735 296Z" fill="#dcb21a"/>
+  <path d="M790 90 L790.0 72 L810.0 72 L810.0 90 L830.0 90 L830.0 72 L850.0 72 L850.0 90 L870.0 90 L870.0 72 L890.0 72 L890.0 90 L890 294 L790 294Z" fill="#f5c518"/><path d="M852 90 L890 90 L890 294 L852 294Z" fill="#d9a90f"/>
+  <path d="M885 130 L885.0 112 L905.0 112 L905.0 130 L925.0 130 L925.0 112 L945.0 112 L945.0 130 L965.0 130 L965.0 112 L985.0 112 L985.0 130 L985 290 L885 290Z" fill="#ff7a1a"/><path d="M947 130 L985 130 L985 290 L947 290Z" fill="#d9600a"/>
+  <path d="M590 236V216.0a6.0 6.0 0 0 1 12 0V236z" fill="#0c3b2a"/><path d="M700 262V242.0a6.0 6.0 0 0 1 12 0V262z" fill="#0c3b2a"/><path d="M745 262V242.0a6.0 6.0 0 0 1 12 0V262z" fill="#0c3b2a"/><path d="M830 156V136.0a6.0 6.0 0 0 1 12 0V156z" fill="#0c3b2a"/><path d="M830 226V206.0a6.0 6.0 0 0 1 12 0V226z" fill="#0c3b2a"/><path d="M925 196V176.0a6.0 6.0 0 0 1 12 0V196z" fill="#0c3b2a"/><path d="M925 256V236.0a6.0 6.0 0 0 1 12 0V256z" fill="#0c3b2a"/>
+  <path d="M560 300h430" stroke="#0c3b2a" stroke-width="4"/>
+  </g>
+  <ellipse cx="300" cy="350" rx="60" ry="12" fill="#656620"/>
+  <ellipse cx="1060" cy="330" rx="50" ry="10" fill="#656620"/>
+</svg>

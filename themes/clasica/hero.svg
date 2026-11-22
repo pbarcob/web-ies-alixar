@@ -1,0 +1,23 @@
+ <svg class="scene" viewBox="0 0 1200 380" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Fachada encalada con arcos, friso de azulejo y olivos">
+  <defs>
+   <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fb0ec"/><stop offset="1" stop-color="#d9e9fb"/></linearGradient>
+   <linearGradient id="wall" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef0f4"/></linearGradient>
+  </defs>
+  <rect width="1200" height="380" fill="url(#sky)"/>
+  <circle class="sun" cx="1040" cy="70" r="46" fill="#f3b61f"/>
+  <path d="M0 260 Q200 210 420 240 T860 230 T1200 245 V380 H0Z" fill="#b9cfe9"/>
+  <rect x="150" y="120" width="900" height="200" fill="url(#wall)"/>
+  <rect x="150" y="104" width="900" height="20" fill="#e4472f" opacity=".9"/>
+  <rect x="150" y="98" width="900" height="8" fill="#c23a26"/>
+  <g id="arches"></g>
+  <rect x="150" y="268" width="900" height="34" fill="url(#az)"/>
+  <rect x="150" y="300" width="900" height="6" fill="#163d86"/>
+  <rect x="1050" y="120" width="10" height="186" fill="#d7dbe4"/>
+  <rect x="0" y="306" width="1200" height="74" fill="#e8c46a"/>
+  <rect x="0" y="306" width="1200" height="8" fill="#d6ad4b"/>
+  <ellipse cx="120" cy="362" rx="80" ry="10" fill="#c9a244"/>
+  <use href="#olive" x="40" y="160" width="160" height="200"/>
+  <ellipse cx="1110" cy="366" rx="70" ry="9" fill="#c9a244"/>
+  <use href="#olive" x="1040" y="176" width="140" height="190"/>
+  <text x="600" y="90" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="800" font-size="30" fill="#163d86" >IES ALIXAR</text>
+ </svg>

@@ -1,0 +1,65 @@
+/* ===== TEMA INSTITUCIONAL =====
+   VOICE formal: la web oficial de un instituto público, sobria y fiable
+   IDEA el membrete del centro: escudo, filete dorado y texto bien compuesto
+   PICTURE una banda serena con el perfil del castillo en línea fina
+   COLOUR blanco, tinta #1b1f24, verde institucional #1d4a37, filete oro #b8912a
+   TYPE Source Serif 4 600 titulares + Source Sans 3 texto
+   LAYOUT columnas ordenadas con filetes finos; nada redondeado; jerarquía por tipografía */
+:root{--bg:light-dark(#ffffff,#111513);--ink:light-dark(#1b1f24,#e9ece9);--soft:light-dark(#4d5560,#b0b8b3);--blue:light-dark(#1d4a37,#8fc7a8);--blue-d:#173b2c;--albero:#b8912a;--red:light-dark(#1d4a37,#8fc7a8);--tile:light-dark(#f4f5f3,#1a201d);--line:light-dark(#d9ddd8,#2e3833);--card:light-dark(#ffffff,#151a17)}
+body{font-family:"Source Sans 3",system-ui,sans-serif;font-size:17px}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;font-weight:600;letter-spacing:-.01em}
+h1{font-size:clamp(36px,4.4vw,52px)}
+h2{font-size:clamp(26px,3vw,34px);padding-bottom:10px;border-bottom:1px solid var(--line)}
+h3{font-size:19px}
+header{border-bottom:3px solid var(--albero)}
+.brand{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:22px}
+.brand img{width:52px;height:52px}
+nav a{border-radius:0;font-weight:600;color:var(--ink);padding:10px 8px;border-bottom:3px solid transparent}
+nav a:hover{background:transparent;border-bottom-color:var(--line)}
+nav a[aria-current=page]{background:transparent;color:var(--blue);border-bottom-color:var(--blue)}
+#menu{border-radius:2px}
+.navig a{color:var(--blue);border-radius:2px}
+.btn{border-radius:2px;background:var(--blue);font-weight:600}
+.btn.alt{border-width:1px}
+.btn.red{background:var(--blue)}
+.hero h1{font-size:clamp(40px,5vw,60px)}
+.avisos{border-radius:0;background:var(--bg);border:1px solid var(--line);border-top:4px solid var(--blue)}
+.avisos li a{color:var(--blue)}
+.scene{height:clamp(120px,14vw,170px)}
+/* instagram en tono claro */
+.igband{background:var(--tile);color:var(--ink);border-block:1px solid var(--line)}
+.igband a{color:var(--blue)}
+.igband .lead,.igband .small,.igband [data-ig-note]{color:var(--soft)!important}
+.prof{background:var(--card);border:1px solid var(--line);border-radius:0}
+.prof span{color:var(--soft)}
+.prof .btn{background:var(--blue);color:#fff}
+.igband .btn.red{background:transparent;color:var(--blue);border:1px solid var(--blue)}
+.post{border-radius:0}
+.post em{border-radius:0;background:#1b1f24d9}
+/* bloques */
+.tile{border-radius:0;border:1px solid var(--line);border-top:3px solid var(--blue)}
+a.tile:hover{border-color:var(--blue);background:var(--tile)}
+.tile .ico{border-radius:0;background:transparent;color:var(--blue);width:auto;height:auto;place-items:start}
+.pillars{border-radius:0;border-left:0;border-right:0}
+.pillar{background:transparent}
+.pillar i{height:3px;border-radius:0;width:40px;background:var(--albero)!important}
+.figs div{border-top:1px solid var(--line);padding-top:14px}
+.figs b{font-family:"Source Serif 4",Georgia,serif;font-weight:600;color:var(--blue);font-size:clamp(28px,3vw,38px)}
+.pagehead{background:var(--bg);border-bottom:1px solid var(--line)}
+.pagehead h1{color:var(--blue)}
+.panel{border-radius:0}
+.docs a{border-radius:0}
+.chips li{border-radius:0;background:var(--tile)}
+.tabs button{border-radius:0}
+.cycle{border-radius:0;border-top:3px solid var(--blue)}
+.cycle .tag{border-radius:0;background:var(--tile);color:var(--ink);border:1px solid var(--line)}
+.cycle .tag.gs{background:var(--blue);color:#fff;border-color:var(--blue)}
+.cycle .tag.ce{background:var(--albero);color:#fff;border-color:var(--albero)}
+.fam>h3{font-size:24px;color:var(--blue)}
+.cal b{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:19px}
+.note{border-radius:0;border-left-color:var(--blue)}
+.embed{border-radius:0}
+.logos li{border-radius:0}
+footer{background:var(--blue-d)}
+.frieze{height:4px;background:var(--albero)}
+.frieze svg{display:none}

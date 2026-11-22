@@ -1,0 +1,82 @@
+/* ===== TEMA ATREVIDO =====
+   VOICE occasion con prestigio: un cartel de bienvenida de un centro con historia
+   IDEA el escudo: castillo dorado y naranja sobre la loma verde del Aljarafe
+   PICTURE el castillo del escudo en grande, geométrico, sobre una banda verde profunda
+   COLOUR verde profundo #0c3b2a, oro #f5c518, naranja torre #ff7a1a, blanco
+   TYPE Fraunces 800 titulares + Inter texto
+   LAYOUT banda verde a sangre con título enorme, castillo debajo; secciones alternas claras y oscuras */
+:root{--bg:light-dark(#ffffff,#08160f);--ink:light-dark(#0b2219,#eaf4ee);--soft:light-dark(#40584c,#a9c2b4);--blue:light-dark(#0f5132,#5fd38d);--blue-d:#0c3b2a;--albero:#f5c518;--red:light-dark(#e8650c,#ff8a33);--tile:light-dark(#eef6ef,#10261c);--line:light-dark(#d3e3d8,#21402f);--card:light-dark(#ffffff,#0e2219)}
+body{font-family:Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:800;letter-spacing:-.025em}
+h3{font-family:Inter,system-ui,sans-serif;font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(32px,4.4vw,52px)}
+header{background:var(--blue-d);border-bottom:0}
+.brand{color:#fff;font-family:Fraunces,Georgia,serif;font-size:24px}
+.brand img{background:#fff;border-radius:50%}
+nav a{color:#e3efe7;border-radius:999px}
+nav a:hover{background:#ffffff1a}
+nav a[aria-current=page]{background:var(--albero);color:#0b2219}
+#menu{background:transparent;color:#fff;border-color:#ffffff55}
+.navig a{color:var(--albero)}
+.navig a:hover{background:#ffffff1a}
+.btn{border-radius:999px;background:var(--albero);color:#0b2219;font-weight:700;padding:0 22px}
+.btn.alt{background:transparent;color:var(--blue);border:2px solid currentColor}
+.btn.red{background:var(--red);color:#fff}
+/* portada: banda verde a sangre */
+section[data-page=inicio] .hero{background:var(--blue-d);color:#fff;box-shadow:0 0 0 100vmax var(--blue-d);clip-path:inset(0 -100vmax);padding-bottom:12px}
+.hero h1{font-size:clamp(60px,10vw,132px);line-height:.92;color:#fff}
+.hero .lead{color:#cfe3d6}
+.hero p{color:#e8f2ec}
+.hero .btn.alt{color:#fff;border-color:#ffffff99}
+.avisos{background:#ffffff12;border:1px solid #ffffff26;border-radius:22px;color:#fff}
+.avisos li{border-color:#ffffff22}
+.avisos li a{color:var(--albero)}
+.avisos li span{color:#bcd3c5}
+.scene{height:clamp(240px,32vw,420px);background:var(--blue-d)}
+/* instagram */
+.igband{background:linear-gradient(160deg,#0c3b2a 0%,#0c3b2a 55%,#14553b 100%)}
+.prof{border-radius:20px;background:#ffffff10}
+.prof .btn{color:#0b2219}
+.post{border-radius:20px}
+.post em{background:#0b2219d9;border-radius:999px}
+.grid-ig{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media(max-width:600px){.grid-ig{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* tarjetas */
+.tile{border-radius:22px;border:0;background:var(--tile);transition:transform .2s}
+a.tile:hover{transform:translateY(-4px);border-color:transparent;box-shadow:0 10px 0 -4px var(--albero)}
+.tile .ico{background:var(--blue-d);color:var(--albero);border-radius:50%}
+.pillars{border:0;gap:12px;border-radius:0;overflow:visible}
+.pillar{border:0!important;border-radius:22px;padding:24px;background:var(--blue-d);color:#fff}
+.pillar:nth-child(2){background:var(--albero);color:#0b2219}
+.pillar:nth-child(3){background:var(--red);color:#fff}
+.pillar:nth-child(4){background:#14553b}
+.pillar:nth-child(5){background:#0b2219}
+.pillar i{display:none}
+.pillar p{color:inherit;opacity:.88}
+.figs{gap:18px}
+.figs div{border-top:0;border-left:6px solid var(--albero);padding:4px 0 4px 14px}
+.figs b{font-family:Fraunces,Georgia,serif;font-size:clamp(32px,3.6vw,46px);color:var(--blue)}
+/* páginas interiores */
+.pagehead{background:var(--blue-d);color:#fff;border-bottom:10px solid var(--albero)}
+.pagehead h1{font-size:clamp(48px,7vw,96px);color:#fff}
+.pagehead .lead{color:#cfe3d6}
+.pagehead a{color:var(--albero)}
+.panel{border-radius:22px;border:0;background:var(--tile)}
+.cycle{border-radius:22px;border:0;background:var(--tile)}
+.cycle .tag{background:var(--albero);color:#0b2219;border-radius:999px}
+.cycle .tag.gs{background:var(--blue-d);color:#fff}
+.cycle .tag.ce{background:var(--red)}
+.fam>h3{font-family:Fraunces,Georgia,serif;font-size:30px}
+.tabs button{border-radius:999px}
+.tabs button[aria-selected=true]{background:var(--blue-d);border-color:var(--blue-d)}
+.chips li{background:var(--card);border:1px solid var(--line)}
+.docs a{border-radius:16px}
+.official a.tile{background:var(--card);border:2px solid var(--line)}
+.cal b{font-family:Fraunces,Georgia,serif;font-size:24px;color:var(--red)}
+.note{border-left-color:var(--red);border-radius:0 16px 16px 0}
+.embed{border-radius:20px}
+.band[style*="var(--tile)"]{background:var(--tile)!important}
+/* pie */
+footer{background:#06150e}
+.frieze{background:#06150e;height:26px}
+@media(prefers-reduced-motion:no-preference){.hero h1{animation:rise .8s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(18px)}}}

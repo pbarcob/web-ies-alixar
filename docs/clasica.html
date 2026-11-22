@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IES Alixar</title>
+<meta name="description" content="IES Alixar, instituto público de Castilleja de la Cuesta (Sevilla): ESO, Bachillerato bilingüe y Formación Profesional de Sanidad, Informática y Seguridad y Medio Ambiente.">
+<meta name="theme-color" content="#1d4ea8">
+<meta property="og:title" content="IES Alixar">
+<meta property="og:description" content="Instituto público de Castilleja de la Cuesta (Sevilla): ESO, Bachillerato y Formación Profesional.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgODAwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCI+Cjx0aXRsZT5JRVMgQWxpeGFyIMK3IENhc3RpbGxlamEgZGUgbGEgQ3Vlc3RhPC90aXRsZT4KPGRlZnM+PGNsaXBQYXRoIGlkPSJpbiI+PGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIyMTQiLz48L2NsaXBQYXRoPjwvZGVmcz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIzNTAiIGZpbGw9IiNmZmYiLz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIzMzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIyMCIvPgo8Y2lyY2xlIGN4PSI0MDAiIGN5PSI0MDAiIHI9IjMzOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZlMTJlIiBzdHJva2Utd2lkdGg9IjE0Ii8+CjxjaXJjbGUgY3g9IjQwMCIgY3k9IjQwMCIgcj0iMjIxIiBmaWxsPSJub25lIiBzdHJva2U9IiMxYTFhMWEiIHN0cm9rZS13aWR0aD0iMjAiLz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIyMjEiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZTEyZSIgc3Ryb2tlLXdpZHRoPSIxNCIvPgo8ZyBjbGlwLXBhdGg9InVybCgjaW4pIj4KPHBhdGggZD0iTTE1MCA0NzYgQzI0MCA0NTIsMzIwIDQzOCw0MDAgNDQwIEM0ODAgNDQyLDU2MCA0MzgsNjYwIDQ1NiBMNjYwIDY2MCBMMTUwIDY2MFoiIGZpbGw9IiMwM2NhM2EiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KPHBhdGggZD0iTTMwMCA1NDggQzMxNSA1MjUsMzQ1IDUyMiwzNjggNTQwIEMzNTUgNTQ2LDMyMCA1NTAsMzAwIDU0OFoiIGZpbGw9IiM2NTY2MjAiLz48cGF0aCBkPSJNNDE4IDU0MCBDNDMwIDUyMiw0NTUgNTIwLDQ3OCA1MzQgQzQ2NiA1NDAsNDQwIDU0NCw0MTggNTQwWiIgZmlsbD0iIzY1NjYyMCIvPjxwYXRoIGQ9Ik00NzIgNDk2IEM0ODggNDc0LDUyMCA0NzQsNTQ2IDQ4OCBDNTMwIDQ5Niw1MDAgNDk5LDQ3MiA0OTZaIiBmaWxsPSIjNjU2NjIwIi8+CjxwYXRoIGQ9Ik0yNTYgMzM4IEwyNTYuMCAzMjcgTDI2NC4wIDMyNyBMMjY0LjAgMzM4IEwyNzIuMCAzMzggTDI3Mi4wIDMyNyBMMjgwLjAgMzI3IEwyODAuMCAzMzggTDI4OC4wIDMzOCBMMjg4LjAgMzI3IEwyOTYuMCAzMjcgTDI5Ni4wIDMzOCBMMjk2IDQ2MiBMMjU2IDQ2MiBaIiBmaWxsPSIjZjdkYjI0IiBzdHJva2U9IiMxYTFhMWEiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0yOTQgMzUyIEwyOTQuMCAzNDEgTDMwMC41IDM0MSBMMzAwLjUgMzUyIEwzMDcuMSAzNTIgTDMwNy4xIDM0MSBMMzEzLjYgMzQxIEwzMTMuNiAzNTIgTDMyMC4xIDM1MiBMMzIwLjEgMzQxIEwzMjYuNyAzNDEgTDMyNi43IDM1MiBMMzMzLjIgMzUyIEwzMzMuMiAzNDEgTDMzOS43IDM0MSBMMzM5LjcgMzUyIEwzNDYuMyAzNTIgTDM0Ni4zIDM0MSBMMzUyLjggMzQxIEwzNTIuOCAzNTIgTDM1OS4zIDM1MiBMMzU5LjMgMzQxIEwzNjUuOSAzNDEgTDM2NS45IDM1MiBMMzcyLjQgMzUyIEwzNzIuNCAzNDEgTDM3OC45IDM0MSBMMzc4LjkgMzUyIEwzODUuNSAzNTIgTDM4NS41IDM0MSBMMzkyLjAgMzQxIEwzOTIuMCAzNTIgTDM5MiA0NTggTDI5NCA0NTggWiIgZmlsbD0iI2YzZDYyNSIgc3Ryb2tlPSIjMWExYTFhIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjc3IDQzMmgxNiBNMjkwIDQwNWgxMiBNMzM0IDQyOGg5IE0yNjUgNDMxaDEyIE0zNDYgMzY2aDEyIE0zNDEgMzg0aDE3IE0zNjEgMzY4aDggTTMyMiA0MzloMTIgTTI4NiAzOTloOCBNMjg2IDQwMGgxMyBNMjg4IDM4NGgxMCBNMzEzIDM4OWg4IE0zNTQgNDA5aDE0IiBzdHJva2U9IiM3YTZhMTAiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTMwMCAzNjB2OTJNMzQwIDM1OHY5NiIgc3Ryb2tlPSIjYzliMjFjIiBzdHJva2Utd2lkdGg9IjUiLz4KPHBhdGggZD0iTTM5MCAyNjIgTDM5MC4wIDI1MSBMMzk2LjUgMjUxIEwzOTYuNSAyNjIgTDQwMy4xIDI2MiBMNDAzLjEgMjUxIEw0MDkuNiAyNTEgTDQwOS42IDI2MiBMNDE2LjIgMjYyIEw0MTYuMiAyNTEgTDQyMi43IDI1MSBMNDIyLjcgMjYyIEw0MjkuMyAyNjIgTDQyOS4zIDI1MSBMNDM1LjggMjUxIEw0MzUuOCAyNjIgTDQ0Mi40IDI2MiBMNDQyLjQgMjUxIEw0NDguOSAyNTEgTDQ0OC45IDI2MiBMNDU1LjUgMjYyIEw0NTUuNSAyNTEgTDQ2Mi4wIDI1MSBMNDYyLjAgMjYyIEw0NjIgNDQ2IEwzOTAgNDQ2IFoiIGZpbGw9IiNmYmUyMjUiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTQzOCA0MjZoOSBNNDAyIDQwOWgxNSBNNDI2IDMyOGgxNCBNNDIzIDM3MGgxMCBNNDE2IDM0MWgxNSBNNDQwIDQyNmgxMyBNNDE3IDMyMmg4IE0zOTkgMzUyaDExIE00MTQgNDE3aDEzIE00MjIgMzE3aDggTTQxMiAzMDJoMTMiIHN0cm9rZT0iIzdhNmExMCIgc3Ryb2tlLXdpZHRoPSIxLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgo8cGF0aCBkPSJNMzk4IDI3MHYxNzAiIHN0cm9rZT0iI2QzYmYxZiIgc3Ryb2tlLXdpZHRoPSI2Ii8+CjxwYXRoIGQ9Ik00NjAgMjk0IEw0NjAuMCAyODMgTDQ2Ny44IDI4MyBMNDY3LjggMjk0IEw0NzUuNiAyOTQgTDQ3NS42IDI4MyBMNDgzLjMgMjgzIEw0ODMuMyAyOTQgTDQ5MS4xIDI5NCBMNDkxLjEgMjgzIEw0OTguOSAyODMgTDQ5OC45IDI5NCBMNTA2LjcgMjk0IEw1MDYuNyAyODMgTDUxNC40IDI4MyBMNTE0LjQgMjk0IEw1MjIuMiAyOTQgTDUyMi4yIDI4MyBMNTMwLjAgMjgzIEw1MzAuMCAyOTQgTDUzMCA0MzggTDQ2MCA0MzggWiIgZmlsbD0iI2ZmYTMwZiIgc3Ryb2tlPSIjMWExYTFhIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNDc4IDM3MmgxMiBNNDkyIDM4Mmg5IE00NjkgNDA2aDExIE00NzcgNDI0aDEzIE01MDEgMzY1aDE0IE00NzQgMzgzaDE3IE00ODkgMzk1aDE1IE00NzEgMzk3aDE0IiBzdHJva2U9IiM5YTVhMDAiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTI4NiAzODhoLTJ2MTJoNHpNNDIwIDMwMHYxNE00MzYgMzMwdjE0TTQ5NSAzMzB2MTIiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIzIi8+CjwvZz4KPGcgZmlsbD0iIzAzY2EzYSI+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5MS4xMiAyNDEuODQpIHJvdGF0ZSgtNTIuODcpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtMzk4LjUgMCkiIGQ9Ik00NjQgMTAwIDYzMSA3NCA2MTggMEgtMjBMLTcgNzRMMTY5IDEwMEwzNzAgMTI0MUwyMDMgMTI2OEwyMTYgMTM0MUg4NTVMODQyIDEyNjhMNjY1IDEyNDFaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwOC40NSAyMjEuMjUpIHJvdGF0ZSgtNDYuOTgpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtMjU2LjAgMCkiIGQ9Ik0xODEgLTI5UTExMiAtMjkgNjMuNSAxOS4wUTE1IDY3IDE1IDEzN1ExNSAyMDYgNjMuMCAyNTQuNVExMTEgMzAzIDE4MSAzMDNRMjUwIDMwMyAyOTguNSAyNTUuMFEzNDcgMjA3IDM0NyAxMzdRMzQ3IDY4IDI5OS4wIDE5LjVRMjUxIC0yOSAxODEgLTI5WiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzYuMTEgMTk1LjU5KSByb3RhdGUoLTM4LjcyKSBzY2FsZSgwLjAzODA5IC0wLjAzODA5KSB0cmFuc2xhdGUoLTY4My4wIDApIiBkPSJNMzc1IDEyNDIgMjA4IDEyNjggMjIxIDEzNDFIMTI3M0wxMjEzIDEwMDBIMTEyMkwxMTI4IDEyMTdRMTAxOSAxMjMxIDgwNyAxMjMxSDY2OUw1ODIgNzM5SDg2M0w5MjAgODg3SDEwMDlMOTM2IDQ3NUg4NDdMODQzIDYyN0g1NjJMNDcxIDExMEg2NTRROTA3IDExMCA5OTIgMTI2TDEwOTUgMzc0SDExODZMMTEwMiAwSC0xNUwtMyA3M0wxNzQgMTAwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNjcuMTcgMTc0LjE3KSByb3RhdGUoLTMwLjQ2KSBzY2FsZSgwLjAzODA5IC0wLjAzODA5KSB0cmFuc2xhdGUoLTI1Ni4wIDApIiBkPSJNMTgxIC0yOVExMTIgLTI5IDYzLjUgMTkuMFExNSA2NyAxNSAxMzdRMTUgMjA2IDYzLjAgMjU0LjVRMTExIDMwMyAxODEgMzAzUTI1MCAzMDMgMjk4LjUgMjU1LjBRMzQ3IDIwNyAzNDcgMTM3UTM0NyA2OCAyOTkuMCAxOS41UTI1MSAtMjkgMTgxIC0yOVoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjk3LjAwIDE1OS4xMCkgcm90YXRlKC0yMy4xNSkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC01NjkuNSAwKSIgZD0iTTQzMiAtMjBRMjE1IC0yMCAzNyA1MUwxMDEgNDExSDE4OUwxOTAgMTk2UTIyNCAxNDcgMjk2LjAgMTE0LjBRMzY4IDgxIDQ0OSA4MVE1OTUgODEgNjc0LjAgMTQyLjBRNzUzIDIwMyA3NTMgMzExUTc1MyAzNjUgNzI5LjAgNDA1LjBRNzA1IDQ0NSA2NjUuNSA0NzcuNVE2MjYgNTEwIDU3Ni4wIDUzOC41UTUyNiA1NjcgNDczLjUgNTk2LjVRNDIxIDYyNiAzNzEuMCA2NjAuNVEzMjEgNjk1IDI4MS41IDc0MC4wUTI0MiA3ODUgMjE4LjAgODQzLjBRMTk0IDkwMSAxOTQgOTc5UTE5NCAxMTYzIDMyNy41IDEyNTkuNVE0NjEgMTM1NiA3MTcgMTM1NlE4ODggMTM1NiAxMDUzIDEzMTNMOTk3IDk5NEg5MDhMOTAxIDExOTBRODIwIDEyNTIgNjkwIDEyNTJRNTc3IDEyNTIgNTEyLjUgMTIwMy4wUTQ0OCAxMTU0IDQ0OCAxMDY5UTQ0OCAxMDA5IDQ5MS41IDk1OC41UTUzNSA5MDggNjI3IDg1N1E3NjEgNzgyIDgyMC41IDc0Mi41UTg4MCA3MDMgOTIxLjAgNjU4LjBROTYyIDYxMyA5ODYuNSA1NTYuMFExMDExIDQ5OSAxMDExIDQyM1ExMDExIDIwNyA4NjIuNSA5My41UTcxNCAtMjAgNDMyIC0yMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI4LjUwIDE0Ny45NSkgcm90YXRlKC0xNS44NCkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC0yNTYuMCAwKSIgZD0iTTE4MSAtMjlRMTEyIC0yOSA2My41IDE5LjBRMTUgNjcgMTUgMTM3UTE1IDIwNiA2My4wIDI1NC41UTExMSAzMDMgMTgxIDMwM1EyNTAgMzAzIDI5OC41IDI1NS4wUTM0NyAyMDcgMzQ3IDEzN1EzNDcgNjggMjk5LjAgMTkuNVEyNTEgLTI5IDE4MSAtMjlaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM4Ni44NSAxMzguMzMpIHJvdGF0ZSgtMi44OCkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTMwMiA3MyAyODggMEgtMTA2TC05MiA3M0wxMSAxMDBMNjc5IDEzNTJIOTE5TDExNzMgMTAwTDEyODIgNzNMMTI2OCAwSDcxOUw3MzMgNzNMODcxIDEwMEw4MTAgNDQ3SDMzOEwxNTQgMTAwWk02ODkgMTExOCAzOTQgNTU3SDc5MFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDM4LjU0IDE0MC44NSkgcm90YXRlKDguNDYpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtNjI1LjUgMCkiIGQ9Ik00NzAgMTA2SDU4M1E2NzkgMTA2IDc5OS41IDExMi41UTkyMCAxMTkgOTU4IDEyNkwxMDc1IDQwNUgxMTU5TDEwNzAgMEgtMTVMLTMgNzNMMTc0IDEwMEwzNzUgMTI0MkwyMDkgMTI2OEwyMjIgMTM0MUg4ODVMODcyIDEyNjhMNjcwIDEyNDJaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ3OC40NSAxNTAuMDIpIHJvdGF0ZSgxNy40Mikgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC0zOTguNSAwKSIgZD0iTTQ2NCAxMDAgNjMxIDc0IDYxOCAwSC0yMEwtNyA3NEwxNjkgMTAwTDM3MCAxMjQxTDIwMyAxMjY4TDIxNiAxMzQxSDg1NUw4NDIgMTI2OEw2NjUgMTI0MVoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTE4LjQxIDE2Ni4yOSkgcm90YXRlKDI2Ljg3KSBzY2FsZSgwLjAzODA5IC0wLjAzODA5KSB0cmFuc2xhdGUoLTY4My4wIDApIiBkPSJNMjU3IDEwMCA0MDggNzMgMzk2IDBILTUyTC00MCA3M0wxMTMgMTAwTDU3NCA2MzVMMzM2IDEyNDJMMTkwIDEyNjhMMjAzIDEzNDFIODE2TDgwMyAxMjY4TDYzOCAxMjQyTDc4MSA4NzVMMTA5NyAxMjQyTDk0NiAxMjY4TDk1OSAxMzQxSDE0MDhMMTM5NSAxMjY4TDEyNDIgMTI0Mkw4MjYgNzYwTDEwODUgMTAwTDEyMzIgNzNMMTIyMCAwSDYwN0w2MTkgNzNMNzg0IDEwMEw2MTkgNTIwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NjMuNzYgMTk1LjQ4KSByb3RhdGUoMzguNjgpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwMi4xNiAyMzMuMzQpIHJvdGF0ZSg1MC41MCkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTU1MiA1NjggNDY5IDEwMCA2MzYgNzMgNjI0IDBILTNMOSA3M0wxNzMgMTAwTDM3NCAxMjQyTDIwNyAxMjY4TDIyMCAxMzQxSDc1NVExMDE3IDEzNDEgMTE0My4wIDEyNTguMFExMjY5IDExNzUgMTI2OSAxMDAzUTEyNjkgODQ3IDExODQuNSA3NDMuMFExMTAwIDYzOSA5NDAgNTk2TDExNDEgMTAwTDEyODggNzNMMTI3NiAwSDg3Nkw2NjggNTY4Wk02MjYgNjc4UTc5MCA2NzggODgzLjAgNzU5LjVROTc2IDg0MSA5NzYgOTg3UTk3NiAxMTE3IDkxNS41IDExNzQuMFE4NTUgMTIzMSA3MzggMTIzMUg2NjlMNTcxIDY3OFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODguMjkgNDEzLjQwKSByb3RhdGUoODcuNTQpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik02NzAgLTIwUTM4NSAtMjAgMjI3LjUgMTI3LjVRNzAgMjc1IDcwIDUzMVE3MCA3NzcgMTc0LjAgOTY0LjVRMjc4IDExNTIgNDcxLjAgMTI1NC4wUTY2NCAxMzU2IDkxMiAxMzU2UTExMzggMTM1NiAxMzg1IDEzMDRMMTMzMiA5NjdIMTI0OFYxMTYxUTExOTQgMTIwNCAxMTE3LjUgMTIyNy41UTEwNDEgMTI1MSA5NTcgMTI1MVE3OTIgMTI1MSA2NjAuNSAxMTU5LjBRNTI5IDEwNjcgNDU2LjAgODk5LjVRMzgzIDczMiAzODMgNTIyUTM4MyAzMTUgNDc1LjAgMTk5LjBRNTY3IDgzIDczNCA4M1E4MzIgODMgOTMxLjAgMTExLjVRMTAzMCAxNDAgMTA5MSAxODRMMTE2OCA0MDRIMTI1M0wxMTg3IDY0UTEwNzQgMjcgOTM3LjAgMy41UTgwMCAtMjAgNjcwIC0yMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTQuNDkgNDYzLjMyKSByb3RhdGUoNzguMjkpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNy4yMCA1MDcuNzYpIHJvdGF0ZSg2OS44MCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC01NjkuNSAwKSIgZD0iTTQzMiAtMjBRMjE1IC0yMCAzNyA1MUwxMDEgNDExSDE4OUwxOTAgMTk2UTIyNCAxNDcgMjk2LjAgMTE0LjBRMzY4IDgxIDQ0OSA4MVE1OTUgODEgNjc0LjAgMTQyLjBRNzUzIDIwMyA3NTMgMzExUTc1MyAzNjUgNzI5LjAgNDA1LjBRNzA1IDQ0NSA2NjUuNSA0NzcuNVE2MjYgNTEwIDU3Ni4wIDUzOC41UTUyNiA1NjcgNDczLjUgNTk2LjVRNDIxIDYyNiAzNzEuMCA2NjAuNVEzMjEgNjk1IDI4MS41IDc0MC4wUTI0MiA3ODUgMjE4LjAgODQzLjBRMTk0IDkwMSAxOTQgOTc5UTE5NCAxMTYzIDMyNy41IDEyNTkuNVE0NjEgMTM1NiA3MTcgMTM1NlE4ODggMTM1NiAxMDUzIDEzMTNMOTk3IDk5NEg5MDhMOTAxIDExOTBRODIwIDEyNTIgNjkwIDEyNTJRNTc3IDEyNTIgNTEyLjUgMTIwMy4wUTQ0OCAxMTU0IDQ0OCAxMDY5UTQ0OCAxMDA5IDQ5MS41IDk1OC41UTUzNSA5MDggNjI3IDg1N1E3NjEgNzgyIDgyMC41IDc0Mi41UTg4MCA3MDMgOTIxLjAgNjU4LjBROTYyIDYxMyA5ODYuNSA1NTYuMFExMDExIDQ5OSAxMDExIDQyM1ExMDExIDIwNyA4NjIuNSA5My41UTcxNCAtMjAgNDMyIC0yMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI1LjM0IDU0OC4wMCkgcm90YXRlKDYxLjY4KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTYyNS41IDApIiBkPSJNMTY3IDAgMTc5IDczIDM5NyAxMDAgNTk3IDEyMzVINTM2UTQ4MCAxMjM1IDQxMC41IDEyMjguMFEzNDEgMTIyMSAzMTEgMTIxNUwyMzYgOTY2SDE0OUwyMTUgMTM0MUgxMzE4TDEyNTIgOTY2SDExNjRMMTE3NyAxMjE1UTExNDkgMTIyMSAxMDc0LjUgMTIyNy4wUTEwMDAgMTIzMyA5NTIgMTIzM0g4OTNMNjkzIDEwMEw5MDEgNzNMODg5IDBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0NS4zNSA1ODAuMjcpIHJvdGF0ZSg1NC43MCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC0zOTguNSAwKSIgZD0iTTQ2NCAxMDAgNjMxIDc0IDYxOCAwSC0yMEwtNyA3NEwxNjkgMTAwTDM3MCAxMjQxTDIwMyAxMjY4TDIxNiAxMzQxSDg1NUw4NDIgMTI2OEw2NjUgMTI0MVoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTY5LjE0IDYwOS44OCkgcm90YXRlKDQ3LjczKSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTYyNS41IDApIiBkPSJNNDcwIDEwNkg1ODNRNjc5IDEwNiA3OTkuNSAxMTIuNVE5MjAgMTE5IDk1OCAxMjZMMTA3NSA0MDVIMTE1OUwxMDcwIDBILTE1TC0zIDczTDE3NCAxMDBMMzc1IDEyNDJMMjA5IDEyNjhMMjIyIDEzNDFIODg1TDg3MiAxMjY4TDY3MCAxMjQyWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDIuNjMgNjQxLjY0KSByb3RhdGUoMzkuMjQpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjI1LjUgMCkiIGQ9Ik00NzAgMTA2SDU4M1E2NzkgMTA2IDc5OS41IDExMi41UTkyMCAxMTkgOTU4IDEyNkwxMDc1IDQwNUgxMTU5TDEwNzAgMEgtMTVMLTMgNzNMMTc0IDEwMEwzNzUgMTI0MkwyMDkgMTI2OEwyMjIgMTM0MUg4ODVMODcyIDEyNjhMNjcwIDEyNDJaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI0Mi4yMyA2NjkuMTcpIHJvdGF0ZSgzMC4zOCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTM3NSAxMjQyIDIwOCAxMjY4IDIyMSAxMzQxSDEyNzNMMTIxMyAxMDAwSDExMjJMMTEyOCAxMjE3UTEwMTkgMTIzMSA4MDcgMTIzMUg2NjlMNTgyIDczOUg4NjNMOTIwIDg4N0gxMDA5TDkzNiA0NzVIODQ3TDg0MyA2MjdINTYyTDQ3MSAxMTBINjU0UTkwNyAxMTAgOTkyIDEyNkwxMDk1IDM3NEgxMTg2TDExMDIgMEgtMTVMLTMgNzNMMTc0IDEwMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjgxLjgwIDY4OC43NCkgcm90YXRlKDIyLjI2KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTUxMi4wIDApIiBkPSJNNjEzIDEyNDIgNDQ2IDEyNjggNDU5IDEzNDFIMTA3OEwxMDY1IDEyNjhMOTA4IDEyNDJMNzY2IDQzMlE3MjggMjE2IDU5NC41IDk4LjBRNDYxIC0yMCAyNDQgLTIwUTkyIC0yMCAtNCAxMEw1MCAzMTRIMTMzTDEzNyAxMzVRMTY5IDg2IDI1MCA4NlEzMjQgODYgMzc2LjAgMTM3LjBRNDI4IDE4OCA0NDMgMjc2WiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMjMuNzMgNzAyLjUzKSByb3RhdGUoMTQuMTUpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM5NC44NSA3MTEuOTYpIHJvdGF0ZSgwLjk1KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTczOS41IDApIiBkPSJNMTEyMCA3NzRRMTEyMCAxMjMxIDcwNSAxMjMxSDY2OEw0NzEgMTE0UTU1NiAxMDYgNTk1IDEwNlE4MzkgMTA2IDk3OS41IDI4NS4wUTExMjAgNDY0IDExMjAgNzc0Wk03NDIgMTM0MVExMDc5IDEzNDEgMTI1NS4wIDExOTcuNVExNDMxIDEwNTQgMTQzMSA3ODhRMTQzMSA1NDkgMTMyOS41IDM2OC41UTEyMjggMTg4IDEwMzguNSA5Mi4wUTg0OSAtNCA1OTkgLTRMMTgwIDBILTE1TC0zIDczTDE3NCAxMDBMMzc1IDEyNDJMMjA4IDEyNjhMMjIxIDEzNDFaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ny4wNyA3MDguNDMpIHJvdGF0ZSgtOC42OCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTM3NSAxMjQyIDIwOCAxMjY4IDIyMSAxMzQxSDEyNzNMMTIxMyAxMDAwSDExMjJMMTEyOCAxMjE3UTEwMTkgMTIzMSA4MDcgMTIzMUg2NjlMNTgyIDczOUg4NjNMOTIwIDg4N0gxMDA5TDkzNiA0NzVIODQ3TDg0MyA2MjdINTYyTDQ3MSAxMTBINjU0UTkwNyAxMTAgOTkyIDEyNkwxMDk1IDM3NEgxMTg2TDExMDIgMEgtMTVMLTMgNzNMMTc0IDEwMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyLjQ0IDY5MS4wMykgcm90YXRlKC0yMS4xMikgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02MjUuNSAwKSIgZD0iTTQ3MCAxMDZINTgzUTY3OSAxMDYgNzk5LjUgMTEyLjVROTIwIDExOSA5NTggMTI2TDEwNzUgNDA1SDExNTlMMTA3MCAwSC0xNUwtMyA3M0wxNzQgMTAwTDM3NSAxMjQyTDIwOSAxMjY4TDIyMiAxMzQxSDg4NUw4NzIgMTI2OEw2NzAgMTI0MloiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTU1Ljk1IDY3MC4yMykgcm90YXRlKC0yOS45OSkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTMwMiA3MyAyODggMEgtMTA2TC05MiA3M0wxMSAxMDBMNjc5IDEzNTJIOTE5TDExNzMgMTAwTDEyODIgNzNMMTI2OCAwSDcxOUw3MzMgNzNMODcxIDEwMEw4MTAgNDQ3SDMzOEwxNTQgMTAwWk02ODkgMTExOCAzOTQgNTU3SDc5MFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjEyLjA2IDYyOC44NSkgcm90YXRlKC00Mi44Mikgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTY3MCAtMjBRMzg1IC0yMCAyMjcuNSAxMjcuNVE3MCAyNzUgNzAgNTMxUTcwIDc3NyAxNzQuMCA5NjQuNVEyNzggMTE1MiA0NzEuMCAxMjU0LjBRNjY0IDEzNTYgOTEyIDEzNTZRMTEzOCAxMzU2IDEzODUgMTMwNEwxMzMyIDk2N0gxMjQ4VjExNjFRMTE5NCAxMjA0IDExMTcuNSAxMjI3LjVRMTA0MSAxMjUxIDk1NyAxMjUxUTc5MiAxMjUxIDY2MC41IDExNTkuMFE1MjkgMTA2NyA0NTYuMCA4OTkuNVEzODMgNzMyIDM4MyA1MjJRMzgzIDMxNSA0NzUuMCAxOTkuMFE1NjcgODMgNzM0IDgzUTgzMiA4MyA5MzEuMCAxMTEuNVExMDMwIDE0MCAxMDkxIDE4NEwxMTY4IDQwNEgxMjUzTDExODcgNjRRMTA3NCAyNyA5MzcuMCAzLjVRODAwIC0yMCA2NzAgLTIwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NDcuMzMgNTkwLjE5KSByb3RhdGUoLTUyLjQ0KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTczOS41IDApIiBkPSJNMTY3IDEyNjggMTgwIDEzNDFINzk5TDc4NiAxMjY4TDYwOSAxMjQyTDQ5NiA1ODZRNDczIDQ1NiA0NzMgMzg5UTQ3MyAxMjIgNzQwIDEyMlE5MDEgMTIyIDEwMDMuNSAyMDkuMFExMTA2IDI5NiAxMTM2IDQ2M0wxMjczIDEyNDJMMTA5OCAxMjY4TDExMTEgMTM0MUgxNTY3TDE1NTQgMTI2OEwxMzk3IDEyNDJMMTI2MiA0NzFRMTIxNyAyMTggMTA3NC41IDk5LjVROTMyIC0xOSA2ODkgLTE5UTQ0NSAtMTkgMzEyLjUgODkuNVExODAgMTk4IDE4MCAzOTlRMTgwIDQ2MyAyMDAgNTgzTDMxNCAxMjQyWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NzUuNjQgNTQ2LjE3KSByb3RhdGUoLTYyLjA2KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTY4My4wIDApIiBkPSJNMzc1IDEyNDIgMjA4IDEyNjggMjIxIDEzNDFIMTI3M0wxMjEzIDEwMDBIMTEyMkwxMTI4IDEyMTdRMTAxOSAxMjMxIDgwNyAxMjMxSDY2OUw1ODIgNzM5SDg2M0w5MjAgODg3SDEwMDlMOTM2IDQ3NUg4NDdMODQzIDYyN0g1NjJMNDcxIDExMEg2NTRROTA3IDExMCA5OTIgMTI2TDEwOTUgMzc0SDExODZMMTEwMiAwSC0xNUwtMyA3M0wxNzQgMTAwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2OTQuMjEgNTAzLjg1KSByb3RhdGUoLTcwLjU2KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTU2OS41IDApIiBkPSJNNDMyIC0yMFEyMTUgLTIwIDM3IDUxTDEwMSA0MTFIMTg5TDE5MCAxOTZRMjI0IDE0NyAyOTYuMCAxMTQuMFEzNjggODEgNDQ5IDgxUTU5NSA4MSA2NzQuMCAxNDIuMFE3NTMgMjAzIDc1MyAzMTFRNzUzIDM2NSA3MjkuMCA0MDUuMFE3MDUgNDQ1IDY2NS41IDQ3Ny41UTYyNiA1MTAgNTc2LjAgNTM4LjVRNTI2IDU2NyA0NzMuNSA1OTYuNVE0MjEgNjI2IDM3MS4wIDY2MC41UTMyMSA2OTUgMjgxLjUgNzQwLjBRMjQyIDc4NSAyMTguMCA4NDMuMFExOTQgOTAxIDE5NCA5NzlRMTk0IDExNjMgMzI3LjUgMTI1OS41UTQ2MSAxMzU2IDcxNyAxMzU2UTg4OCAxMzU2IDEwNTMgMTMxM0w5OTcgOTk0SDkwOEw5MDEgMTE5MFE4MjAgMTI1MiA2OTAgMTI1MlE1NzcgMTI1MiA1MTIuNSAxMjAzLjBRNDQ4IDExNTQgNDQ4IDEwNjlRNDQ4IDEwMDkgNDkxLjUgOTU4LjVRNTM1IDkwOCA2MjcgODU3UTc2MSA3ODIgODIwLjUgNzQyLjVRODgwIDcwMyA5MjEuMCA2NTguMFE5NjIgNjEzIDk4Ni41IDU1Ni4wUTEwMTEgNDk5IDEwMTEgNDIzUTEwMTEgMjA3IDg2Mi41IDkzLjVRNzE0IC0yMCA0MzIgLTIwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MDUuOTIgNDYxLjI5KSByb3RhdGUoLTc4LjY3KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTYyNS41IDApIiBkPSJNMTY3IDAgMTc5IDczIDM5NyAxMDAgNTk3IDEyMzVINTM2UTQ4MCAxMjM1IDQxMC41IDEyMjguMFEzNDEgMTIyMSAzMTEgMTIxNUwyMzYgOTY2SDE0OUwyMTUgMTM0MUgxMzE4TDEyNTIgOTY2SDExNjRMMTE3NyAxMjE1UTExNDkgMTIyMSAxMDc0LjUgMTIyNy4wUTEwMDAgMTIzMyA5NTIgMTIzM0g4OTNMNjkzIDEwMEw5MDEgNzNMODg5IDBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcxMS43MSA0MTMuNDApIHJvdGF0ZSgtODcuNTQpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxjaXJjbGUgY3g9IjEzNS4wIiBjeT0iMzAzLjYiIHI9IjkiLz4KPGNpcmNsZSBjeD0iNjY1LjAiIGN5PSIzMDMuNiIgcj0iOSIvPgo8L2c+Cjwvc3ZnPg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE everyday institucional: cercano, claro, para familias, alumnado y profesorado
+   IDEA un zócalo de azulejo sevillano: la web se ordena en piezas de tile que encajan
+   PICTURE fachada encalada con arcos, friso de azulejo y olivos del Aljarafe; muro de Instagram en azulejos
+   COLOUR blanco cal, azul azulejo #1d4ea8, albero #f3b61f, acento almagra #d9412f
+   TYPE Archivo 800 titulares + Archivo texto
+   LAYOUT portada: título y avisos arriba, escena a todo ancho, banda azul de Instagram; móvil apilado */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0e1630);--ink:light-dark(#14213d,#eef2fb);--soft:light-dark(#4a5672,#b5c0da);--blue:light-dark(#1d4ea8,#7ea6f2);--blue-d:light-dark(#163d86,#0a1330);--albero:#f3b61f;--red:light-dark(#d9412f,#ff7a68);--tile:light-dark(#edf2fc,#17244a);--line:light-dark(#d7def0,#2a3a66);--card:light-dark(#ffffff,#131e40)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Archivo,system-ui,sans-serif;overflow-x:clip}
+a{color:var(--blue)}
+img,svg{max-width:100%}
+h1,h2,h3{font-weight:800;line-height:1.05;letter-spacing:-.02em;text-wrap:balance;margin:0}
+h1{font-size:clamp(40px,6vw,64px)}
+h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:14px}
+h3{font-size:20px;margin-bottom:6px;letter-spacing:-.01em}
+p{margin:0 0 12px;max-width:68ch}
+.band{padding-block:clamp(28px,4vw,64px);padding-inline:max(5vw,16px)}
+.wrap{max-width:1240px;margin-inline:auto}
+.lead{font-size:18px;color:var(--soft)}
+.small{font-size:14px;color:var(--soft)}
+/* cabecera */
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;max-width:1240px;margin:auto;padding:10px max(5vw,16px);flex-wrap:wrap}
+.brand{flex-wrap:nowrap;white-space:nowrap;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:800;font-size:20px;margin-right:auto}
+.brand img{width:44px;height:44px}
+nav{display:flex;flex-wrap:wrap;gap:4px}
+nav a{padding:10px 10px;border-radius:8px;text-decoration:none;color:var(--ink);font-weight:600;font-size:15px}
+nav a:hover{background:var(--tile)}
+nav a[aria-current=page]{background:var(--blue);color:#fff}
+nav a.ig{color:var(--red)}
+nav a.ig[aria-current=page]{background:var(--red);color:#fff}
+#menu{display:none;min-height:44px;padding:0 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:600 15px Archivo,sans-serif}
+@media(max-width:1120px){#menu{display:block}nav{display:none;width:100%;order:3}nav.open{display:flex}nav a{flex:1 1 45%}}
+/* páginas */
+[data-page]{display:none}[data-page].on{display:block}
+.skip{position:absolute;left:-9999px;top:8px;z-index:50;background:var(--blue);color:#fff;padding:10px 14px;border-radius:8px}
+.skip:focus{left:16px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:10px;background:var(--blue);color:#fff;font-weight:600;text-decoration:none}
+.btn.alt{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+.btn.red{background:var(--red)}
+.btn:focus-visible,nav a:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--albero);outline-offset:2px}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+/* portada */
+.hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:start}
+.avisos{background:var(--tile);border-radius:14px;padding:18px 20px}
+.avisos h3{font-size:17px}
+.avisos ul{list-style:none;margin:8px 0 0;padding:0}
+.avisos li{border-top:1px solid var(--line);padding:10px 0}
+.avisos li a{font-weight:600;text-decoration:none}
+.avisos li span{display:block;font-size:14px;color:var(--soft)}
+.scene{display:block;width:100%;height:clamp(220px,30vw,380px)}
+@media(max-width:760px){.hero{grid-template-columns:minmax(0,1fr)}}
+/* instagram */
+.igband{background:var(--blue-d);color:#fff}
+.igband a{color:#fff}
+.igband .lead{color:#c9d6f5}
+.ighead{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:end;margin-bottom:22px}
+.profiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:18px}
+.prof{display:flex;gap:14px;align-items:center;background:#ffffff14;border:1px solid #ffffff2a;border-radius:14px;padding:14px 16px}
+.prof svg{width:56px;height:56px;flex:none}
+.prof b{font-size:18px;display:block}
+.prof span{font-size:14px;color:#c9d6f5}
+.prof .btn{margin-left:auto;background:#fff;color:var(--blue-d);flex:none}
+.grid-ig{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.post{aspect-ratio:1;border-radius:10px;overflow:hidden;position:relative;display:block;text-decoration:none}
+.post svg{position:absolute;inset:0;width:100%;height:100%}
+.post em{position:absolute;left:8px;bottom:8px;right:8px;font-style:normal;font-size:13px;font-weight:600;background:#0e1630cc;color:#fff;padding:4px 8px;border-radius:6px;width:max-content;max-width:calc(100% - 16px)}
+.ig-live{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+@media(max-width:860px){.grid-ig{grid-template-columns:repeat(3,minmax(0,1fr))}.profiles{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.ighead{grid-template-columns:minmax(0,1fr)}.prof{flex-wrap:wrap}.prof .btn{margin-left:0}}
+/* tiles: tarjetas en azulejo */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px}
+.six{grid-template-columns:repeat(6,minmax(0,1fr))}
+@media(max-width:1000px){.six{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:520px){.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--ink)}
+a.tile:hover{border-color:var(--blue)}
+.tile .ico{width:40px;height:40px;border-radius:10px;background:var(--tile);display:grid;place-items:center;color:var(--blue)}
+.tile .ico svg{width:24px;height:24px}
+.tile p{font-size:15px;color:var(--soft);margin:0}
+.pillars{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.pillar{padding:20px;border-right:1px solid var(--line);background:var(--card)}
+.pillar:last-child{border-right:0}
+.pillar i{display:block;width:100%;height:10px;border-radius:5px;margin-bottom:14px}
+.pillar p{font-size:15px;color:var(--soft);margin:0}
+@media(max-width:1000px){.pillars{grid-template-columns:repeat(2,minmax(0,1fr))}.pillar{border-bottom:1px solid var(--line)}.pillar:last-child{grid-column:1/-1}}
+@media(max-width:560px){.pillars{grid-template-columns:minmax(0,1fr)}.pillar{border-right:0}}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(10em,1fr));gap:14px;margin-top:22px}
+.figs div{border-top:4px solid var(--albero);padding-top:10px}
+.figs b{display:block;font-size:clamp(30px,3.4vw,42px);font-weight:800;line-height:1;color:var(--blue);white-space:nowrap}
+.figs span{font-size:15px;color:var(--soft)}
+/* páginas interiores */
+.pagehead{background:var(--tile);border-bottom:6px solid var(--albero)}
+.pagehead p{margin-top:10px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,48px)}
+.side{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:start}
+@media(max-width:800px){.two,.side{grid-template-columns:minmax(0,1fr)}}
+ul.clean{padding-left:20px;margin:0 0 12px}
+ul.clean li{margin-bottom:6px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.panel+.panel{margin-top:14px}
+.people{list-style:none;padding:0;margin:0}
+.people li{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:9px 0;border-top:1px solid var(--line)}
+.people li span{color:var(--soft);font-size:15px}
+.docs{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:8px}
+.docs a{display:flex;gap:10px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink);background:var(--card);min-height:52px}
+.docs a:hover{border-color:var(--blue)}
+.docs a b{color:var(--blue);font-size:13px;flex:none;width:3.6em}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px;padding:0;list-style:none}
+.chips li{background:var(--tile);border-radius:999px;padding:4px 11px;font-size:14px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.tabs button{min-height:44px;padding:0 16px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:600 15px Archivo,sans-serif;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--blue);border-color:var(--blue);color:#fff}
+.course{display:none}.course.on{display:block}
+.cycle{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--card);display:flex;flex-direction:column;gap:4px}
+.cycle .tag{align-self:flex-start;font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--albero);color:#14213d}
+.cycle .tag.gs{background:var(--blue);color:#fff}
+.cycle .tag.ce{background:var(--red);color:#fff}
+.cycle dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 12px;margin:8px 0 0;font-size:15px}
+.cycle dt{color:var(--soft)}
+.cycle dd{margin:0}
+.fam{margin-bottom:34px}
+.fam>h3{font-size:24px;margin-bottom:12px}
+.cal{list-style:none;margin:0;padding:0}
+.cal li{display:grid;grid-template-columns:9.5em minmax(0,1fr);gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.cal b{font-size:20px;color:var(--blue);line-height:1.2}
+@media(max-width:520px){.cal li{grid-template-columns:minmax(0,1fr);gap:2px}}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.logos{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:10px 0 0}
+.logos li{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:14px;background:var(--card)}
+.embed{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:var(--tile);border:1px solid var(--line)}
+.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.embed .fb{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:16px;font-size:15px;color:var(--soft)}
+.drive{height:clamp(360px,60vh,620px);aspect-ratio:auto}
+.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px;margin-top:14px}
+.vids figcaption{font-size:14px;color:var(--soft);margin-top:6px}
+figure{margin:0}
+.src{font-size:13px;color:var(--soft);margin-top:8px}
+.official{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media(max-width:900px){.official{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.official{grid-template-columns:minmax(0,1fr)}}
+.official a.tile b{font-size:13px;color:var(--soft);font-weight:500}
+.navig{display:flex;gap:6px;align-items:center}
+.navig a{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;color:var(--red)}
+.navig a:hover{background:var(--tile)}
+.navig svg{width:22px;height:22px}
+.post img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.note{border-left:4px solid var(--albero);padding:10px 14px;background:var(--tile);border-radius:0 10px 10px 0;font-size:15px}
+/* pie */
+footer{background:var(--blue-d);color:#dfe7fb}
+footer a{color:#fff}
+.foot{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:24px}
+footer h3{font-size:16px;color:#fff;margin-bottom:8px}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:6px;font-size:15px}
+.frieze{height:22px;background:var(--blue-d)}
+@media(max-width:800px){.foot{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.foot{grid-template-columns:minmax(0,1fr)}}
+@media(prefers-reduced-motion:no-preference){.sun{animation:glow 6s ease-in-out infinite alternate}@keyframes glow{to{opacity:.75}}}
+.estilo{max-width:1240px;margin:28px auto 0;padding-top:14px;border-top:1px solid #ffffff2a;font-size:13px;color:#c9d6f5}
+.estilo a{color:inherit;text-decoration:none;padding:4px 2px}
+.estilo a:hover{text-decoration:underline}
+.estilo a[aria-current]{color:#fff;font-weight:700;text-decoration:underline}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HighSchool","name":"IES Alixar","address":{"@type":"PostalAddress","streetAddress":"Avda. de la Unidad, s/n","postalCode":"41950","addressLocality":"Castilleja de la Cuesta","addressRegion":"Sevilla","addressCountry":"ES"},"telephone":"+34955622566","sameAs":["https://www.instagram.com/ies_alixar/","https://www.instagram.com/biblioalixar/"]}</script>
+</head>
+<body data-theme-name="clasica">
+<a class="skip" href="#main">Saltar al contenido</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <pattern id="az" width="40" height="40" patternUnits="userSpaceOnUse">
+   <rect width="40" height="40" fill="#f7f3e8"/>
+   <path d="M20 2 L38 20 L20 38 L2 20Z" fill="#1d4ea8"/>
+   <circle cx="20" cy="20" r="8" fill="#f3b61f"/>
+   <circle cx="20" cy="20" r="3.5" fill="#d9412f"/>
+   <path d="M0 0h8L0 8zM40 0h-8l8 8zM0 40h8l-8-8zM40 40h-8l8-8z" fill="#1d4ea8"/>
+  </pattern>
+  <pattern id="az2" width="40" height="40" patternUnits="userSpaceOnUse">
+   <rect width="40" height="40" fill="#1d4ea8"/>
+   <circle cx="20" cy="20" r="13" fill="none" stroke="#f7f3e8" stroke-width="3"/>
+   <path d="M20 9 L23 20 L20 31 L17 20Z M9 20 L20 17 L31 20 L20 23Z" fill="#f3b61f"/>
+   <circle cx="0" cy="0" r="6" fill="#f7f3e8"/><circle cx="40" cy="0" r="6" fill="#f7f3e8"/><circle cx="0" cy="40" r="6" fill="#f7f3e8"/><circle cx="40" cy="40" r="6" fill="#f7f3e8"/>
+  </pattern>
+  <pattern id="az3" width="40" height="40" patternUnits="userSpaceOnUse">
+   <rect width="40" height="40" fill="#f3b61f"/>
+   <path d="M0 20 Q10 8 20 20 T40 20" fill="none" stroke="#1d4ea8" stroke-width="4"/>
+   <path d="M0 40 Q10 28 20 40 T40 40 M0 0 Q10 -12 20 0 T40 0" fill="none" stroke="#d9412f" stroke-width="3"/>
+  </pattern>
+  <symbol id="arch" viewBox="0 0 120 150"><path d="M0 150V60A60 60 0 0 1 120 60V150Z" fill="#fff"/><path d="M18 150V66A42 42 0 0 1 102 66V150Z" fill="#5f7fbf"/><path d="M18 150V66A42 42 0 0 1 60 24V150Z" fill="#4a6aac"/></symbol>
+  <symbol id="olive" viewBox="0 0 160 200"><rect x="72" y="110" width="16" height="90" rx="5" fill="#6b5236"/><path d="M80 120 Q60 100 52 112" stroke="#6b5236" stroke-width="7" fill="none"/><ellipse cx="80" cy="78" rx="70" ry="52" fill="#6f8f4e"/><ellipse cx="62" cy="62" rx="40" ry="30" fill="#87a663"/><ellipse cx="108" cy="92" rx="34" ry="24" fill="#5d7c40"/></symbol>
+ </defs>
+</svg>
+
+<header>
+ <div class="bar">
+  <a class="brand" href="#inicio" aria-label="IES Alixar, inicio">
+   <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgODAwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCI+Cjx0aXRsZT5JRVMgQWxpeGFyIMK3IENhc3RpbGxlamEgZGUgbGEgQ3Vlc3RhPC90aXRsZT4KPGRlZnM+PGNsaXBQYXRoIGlkPSJpbiI+PGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIyMTQiLz48L2NsaXBQYXRoPjwvZGVmcz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIzNTAiIGZpbGw9IiNmZmYiLz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIzMzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIyMCIvPgo8Y2lyY2xlIGN4PSI0MDAiIGN5PSI0MDAiIHI9IjMzOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZlMTJlIiBzdHJva2Utd2lkdGg9IjE0Ii8+CjxjaXJjbGUgY3g9IjQwMCIgY3k9IjQwMCIgcj0iMjIxIiBmaWxsPSJub25lIiBzdHJva2U9IiMxYTFhMWEiIHN0cm9rZS13aWR0aD0iMjAiLz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIyMjEiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZTEyZSIgc3Ryb2tlLXdpZHRoPSIxNCIvPgo8ZyBjbGlwLXBhdGg9InVybCgjaW4pIj4KPHBhdGggZD0iTTE1MCA0NzYgQzI0MCA0NTIsMzIwIDQzOCw0MDAgNDQwIEM0ODAgNDQyLDU2MCA0MzgsNjYwIDQ1NiBMNjYwIDY2MCBMMTUwIDY2MFoiIGZpbGw9IiMwM2NhM2EiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KPHBhdGggZD0iTTMwMCA1NDggQzMxNSA1MjUsMzQ1IDUyMiwzNjggNTQwIEMzNTUgNTQ2LDMyMCA1NTAsMzAwIDU0OFoiIGZpbGw9IiM2NTY2MjAiLz48cGF0aCBkPSJNNDE4IDU0MCBDNDMwIDUyMiw0NTUgNTIwLDQ3OCA1MzQgQzQ2NiA1NDAsNDQwIDU0NCw0MTggNTQwWiIgZmlsbD0iIzY1NjYyMCIvPjxwYXRoIGQ9Ik00NzIgNDk2IEM0ODggNDc0LDUyMCA0NzQsNTQ2IDQ4OCBDNTMwIDQ5Niw1MDAgNDk5LDQ3MiA0OTZaIiBmaWxsPSIjNjU2NjIwIi8+CjxwYXRoIGQ9Ik0yNTYgMzM4IEwyNTYuMCAzMjcgTDI2NC4wIDMyNyBMMjY0LjAgMzM4IEwyNzIuMCAzMzggTDI3Mi4wIDMyNyBMMjgwLjAgMzI3IEwyODAuMCAzMzggTDI4OC4wIDMzOCBMMjg4LjAgMzI3IEwyOTYuMCAzMjcgTDI5Ni4wIDMzOCBMMjk2IDQ2MiBMMjU2IDQ2MiBaIiBmaWxsPSIjZjdkYjI0IiBzdHJva2U9IiMxYTFhMWEiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0yOTQgMzUyIEwyOTQuMCAzNDEgTDMwMC41IDM0MSBMMzAwLjUgMzUyIEwzMDcuMSAzNTIgTDMwNy4xIDM0MSBMMzEzLjYgMzQxIEwzMTMuNiAzNTIgTDMyMC4xIDM1MiBMMzIwLjEgMzQxIEwzMjYuNyAzNDEgTDMyNi43IDM1MiBMMzMzLjIgMzUyIEwzMzMuMiAzNDEgTDMzOS43IDM0MSBMMzM5LjcgMzUyIEwzNDYuMyAzNTIgTDM0Ni4zIDM0MSBMMzUyLjggMzQxIEwzNTIuOCAzNTIgTDM1OS4zIDM1MiBMMzU5LjMgMzQxIEwzNjUuOSAzNDEgTDM2NS45IDM1MiBMMzcyLjQgMzUyIEwzNzIuNCAzNDEgTDM3OC45IDM0MSBMMzc4LjkgMzUyIEwzODUuNSAzNTIgTDM4NS41IDM0MSBMMzkyLjAgMzQxIEwzOTIuMCAzNTIgTDM5MiA0NTggTDI5NCA0NTggWiIgZmlsbD0iI2YzZDYyNSIgc3Ryb2tlPSIjMWExYTFhIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjc3IDQzMmgxNiBNMjkwIDQwNWgxMiBNMzM0IDQyOGg5IE0yNjUgNDMxaDEyIE0zNDYgMzY2aDEyIE0zNDEgMzg0aDE3IE0zNjEgMzY4aDggTTMyMiA0MzloMTIgTTI4NiAzOTloOCBNMjg2IDQwMGgxMyBNMjg4IDM4NGgxMCBNMzEzIDM4OWg4IE0zNTQgNDA5aDE0IiBzdHJva2U9IiM3YTZhMTAiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTMwMCAzNjB2OTJNMzQwIDM1OHY5NiIgc3Ryb2tlPSIjYzliMjFjIiBzdHJva2Utd2lkdGg9IjUiLz4KPHBhdGggZD0iTTM5MCAyNjIgTDM5MC4wIDI1MSBMMzk2LjUgMjUxIEwzOTYuNSAyNjIgTDQwMy4xIDI2MiBMNDAzLjEgMjUxIEw0MDkuNiAyNTEgTDQwOS42IDI2MiBMNDE2LjIgMjYyIEw0MTYuMiAyNTEgTDQyMi43IDI1MSBMNDIyLjcgMjYyIEw0MjkuMyAyNjIgTDQyOS4zIDI1MSBMNDM1LjggMjUxIEw0MzUuOCAyNjIgTDQ0Mi40IDI2MiBMNDQyLjQgMjUxIEw0NDguOSAyNTEgTDQ0OC45IDI2MiBMNDU1LjUgMjYyIEw0NTUuNSAyNTEgTDQ2Mi4wIDI1MSBMNDYyLjAgMjYyIEw0NjIgNDQ2IEwzOTAgNDQ2IFoiIGZpbGw9IiNmYmUyMjUiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTQzOCA0MjZoOSBNNDAyIDQwOWgxNSBNNDI2IDMyOGgxNCBNNDIzIDM3MGgxMCBNNDE2IDM0MWgxNSBNNDQwIDQyNmgxMyBNNDE3IDMyMmg4IE0zOTkgMzUyaDExIE00MTQgNDE3aDEzIE00MjIgMzE3aDggTTQxMiAzMDJoMTMiIHN0cm9rZT0iIzdhNmExMCIgc3Ryb2tlLXdpZHRoPSIxLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgo8cGF0aCBkPSJNMzk4IDI3MHYxNzAiIHN0cm9rZT0iI2QzYmYxZiIgc3Ryb2tlLXdpZHRoPSI2Ii8+CjxwYXRoIGQ9Ik00NjAgMjk0IEw0NjAuMCAyODMgTDQ2Ny44IDI4MyBMNDY3LjggMjk0IEw0NzUuNiAyOTQgTDQ3NS42IDI4MyBMNDgzLjMgMjgzIEw0ODMuMyAyOTQgTDQ5MS4xIDI5NCBMNDkxLjEgMjgzIEw0OTguOSAyODMgTDQ5OC45IDI5NCBMNTA2LjcgMjk0IEw1MDYuNyAyODMgTDUxNC40IDI4MyBMNTE0LjQgMjk0IEw1MjIuMiAyOTQgTDUyMi4yIDI4MyBMNTMwLjAgMjgzIEw1MzAuMCAyOTQgTDUzMCA0MzggTDQ2MCA0MzggWiIgZmlsbD0iI2ZmYTMwZiIgc3Ryb2tlPSIjMWExYTFhIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNDc4IDM3MmgxMiBNNDkyIDM4Mmg5IE00NjkgNDA2aDExIE00NzcgNDI0aDEzIE01MDEgMzY1aDE0IE00NzQgMzgzaDE3IE00ODkgMzk1aDE1IE00NzEgMzk3aDE0IiBzdHJva2U9IiM5YTVhMDAiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTI4NiAzODhoLTJ2MTJoNHpNNDIwIDMwMHYxNE00MzYgMzMwdjE0TTQ5NSAzMzB2MTIiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIzIi8+CjwvZz4KPGcgZmlsbD0iIzAzY2EzYSI+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5MS4xMiAyNDEuODQpIHJvdGF0ZSgtNTIuODcpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtMzk4LjUgMCkiIGQ9Ik00NjQgMTAwIDYzMSA3NCA2MTggMEgtMjBMLTcgNzRMMTY5IDEwMEwzNzAgMTI0MUwyMDMgMTI2OEwyMTYgMTM0MUg4NTVMODQyIDEyNjhMNjY1IDEyNDFaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwOC40NSAyMjEuMjUpIHJvdGF0ZSgtNDYuOTgpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtMjU2LjAgMCkiIGQ9Ik0xODEgLTI5UTExMiAtMjkgNjMuNSAxOS4wUTE1IDY3IDE1IDEzN1ExNSAyMDYgNjMuMCAyNTQuNVExMTEgMzAzIDE4MSAzMDNRMjUwIDMwMyAyOTguNSAyNTUuMFEzNDcgMjA3IDM0NyAxMzdRMzQ3IDY4IDI5OS4wIDE5LjVRMjUxIC0yOSAxODEgLTI5WiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzYuMTEgMTk1LjU5KSByb3RhdGUoLTM4LjcyKSBzY2FsZSgwLjAzODA5IC0wLjAzODA5KSB0cmFuc2xhdGUoLTY4My4wIDApIiBkPSJNMzc1IDEyNDIgMjA4IDEyNjggMjIxIDEzNDFIMTI3M0wxMjEzIDEwMDBIMTEyMkwxMTI4IDEyMTdRMTAxOSAxMjMxIDgwNyAxMjMxSDY2OUw1ODIgNzM5SDg2M0w5MjAgODg3SDEwMDlMOTM2IDQ3NUg4NDdMODQzIDYyN0g1NjJMNDcxIDExMEg2NTRROTA3IDExMCA5OTIgMTI2TDEwOTUgMzc0SDExODZMMTEwMiAwSC0xNUwtMyA3M0wxNzQgMTAwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNjcuMTcgMTc0LjE3KSByb3RhdGUoLTMwLjQ2KSBzY2FsZSgwLjAzODA5IC0wLjAzODA5KSB0cmFuc2xhdGUoLTI1Ni4wIDApIiBkPSJNMTgxIC0yOVExMTIgLTI5IDYzLjUgMTkuMFExNSA2NyAxNSAxMzdRMTUgMjA2IDYzLjAgMjU0LjVRMTExIDMwMyAxODEgMzAzUTI1MCAzMDMgMjk4LjUgMjU1LjBRMzQ3IDIwNyAzNDcgMTM3UTM0NyA2OCAyOTkuMCAxOS41UTI1MSAtMjkgMTgxIC0yOVoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjk3LjAwIDE1OS4xMCkgcm90YXRlKC0yMy4xNSkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC01NjkuNSAwKSIgZD0iTTQzMiAtMjBRMjE1IC0yMCAzNyA1MUwxMDEgNDExSDE4OUwxOTAgMTk2UTIyNCAxNDcgMjk2LjAgMTE0LjBRMzY4IDgxIDQ0OSA4MVE1OTUgODEgNjc0LjAgMTQyLjBRNzUzIDIwMyA3NTMgMzExUTc1MyAzNjUgNzI5LjAgNDA1LjBRNzA1IDQ0NSA2NjUuNSA0NzcuNVE2MjYgNTEwIDU3Ni4wIDUzOC41UTUyNiA1NjcgNDczLjUgNTk2LjVRNDIxIDYyNiAzNzEuMCA2NjAuNVEzMjEgNjk1IDI4MS41IDc0MC4wUTI0MiA3ODUgMjE4LjAgODQzLjBRMTk0IDkwMSAxOTQgOTc5UTE5NCAxMTYzIDMyNy41IDEyNTkuNVE0NjEgMTM1NiA3MTcgMTM1NlE4ODggMTM1NiAxMDUzIDEzMTNMOTk3IDk5NEg5MDhMOTAxIDExOTBRODIwIDEyNTIgNjkwIDEyNTJRNTc3IDEyNTIgNTEyLjUgMTIwMy4wUTQ0OCAxMTU0IDQ0OCAxMDY5UTQ0OCAxMDA5IDQ5MS41IDk1OC41UTUzNSA5MDggNjI3IDg1N1E3NjEgNzgyIDgyMC41IDc0Mi41UTg4MCA3MDMgOTIxLjAgNjU4LjBROTYyIDYxMyA5ODYuNSA1NTYuMFExMDExIDQ5OSAxMDExIDQyM1ExMDExIDIwNyA4NjIuNSA5My41UTcxNCAtMjAgNDMyIC0yMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI4LjUwIDE0Ny45NSkgcm90YXRlKC0xNS44NCkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC0yNTYuMCAwKSIgZD0iTTE4MSAtMjlRMTEyIC0yOSA2My41IDE5LjBRMTUgNjcgMTUgMTM3UTE1IDIwNiA2My4wIDI1NC41UTExMSAzMDMgMTgxIDMwM1EyNTAgMzAzIDI5OC41IDI1NS4wUTM0NyAyMDcgMzQ3IDEzN1EzNDcgNjggMjk5LjAgMTkuNVEyNTEgLTI5IDE4MSAtMjlaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM4Ni44NSAxMzguMzMpIHJvdGF0ZSgtMi44OCkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTMwMiA3MyAyODggMEgtMTA2TC05MiA3M0wxMSAxMDBMNjc5IDEzNTJIOTE5TDExNzMgMTAwTDEyODIgNzNMMTI2OCAwSDcxOUw3MzMgNzNMODcxIDEwMEw4MTAgNDQ3SDMzOEwxNTQgMTAwWk02ODkgMTExOCAzOTQgNTU3SDc5MFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDM4LjU0IDE0MC44NSkgcm90YXRlKDguNDYpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtNjI1LjUgMCkiIGQ9Ik00NzAgMTA2SDU4M1E2NzkgMTA2IDc5OS41IDExMi41UTkyMCAxMTkgOTU4IDEyNkwxMDc1IDQwNUgxMTU5TDEwNzAgMEgtMTVMLTMgNzNMMTc0IDEwMEwzNzUgMTI0MkwyMDkgMTI2OEwyMjIgMTM0MUg4ODVMODcyIDEyNjhMNjcwIDEyNDJaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ3OC40NSAxNTAuMDIpIHJvdGF0ZSgxNy40Mikgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC0zOTguNSAwKSIgZD0iTTQ2NCAxMDAgNjMxIDc0IDYxOCAwSC0yMEwtNyA3NEwxNjkgMTAwTDM3MCAxMjQxTDIwMyAxMjY4TDIxNiAxMzQxSDg1NUw4NDIgMTI2OEw2NjUgMTI0MVoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTE4LjQxIDE2Ni4yOSkgcm90YXRlKDI2Ljg3KSBzY2FsZSgwLjAzODA5IC0wLjAzODA5KSB0cmFuc2xhdGUoLTY4My4wIDApIiBkPSJNMjU3IDEwMCA0MDggNzMgMzk2IDBILTUyTC00MCA3M0wxMTMgMTAwTDU3NCA2MzVMMzM2IDEyNDJMMTkwIDEyNjhMMjAzIDEzNDFIODE2TDgwMyAxMjY4TDYzOCAxMjQyTDc4MSA4NzVMMTA5NyAxMjQyTDk0NiAxMjY4TDk1OSAxMzQxSDE0MDhMMTM5NSAxMjY4TDEyNDIgMTI0Mkw4MjYgNzYwTDEwODUgMTAwTDEyMzIgNzNMMTIyMCAwSDYwN0w2MTkgNzNMNzg0IDEwMEw2MTkgNTIwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NjMuNzYgMTk1LjQ4KSByb3RhdGUoMzguNjgpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwMi4xNiAyMzMuMzQpIHJvdGF0ZSg1MC41MCkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTU1MiA1NjggNDY5IDEwMCA2MzYgNzMgNjI0IDBILTNMOSA3M0wxNzMgMTAwTDM3NCAxMjQyTDIwNyAxMjY4TDIyMCAxMzQxSDc1NVExMDE3IDEzNDEgMTE0My4wIDEyNTguMFExMjY5IDExNzUgMTI2OSAxMDAzUTEyNjkgODQ3IDExODQuNSA3NDMuMFExMTAwIDYzOSA5NDAgNTk2TDExNDEgMTAwTDEyODggNzNMMTI3NiAwSDg3Nkw2NjggNTY4Wk02MjYgNjc4UTc5MCA2NzggODgzLjAgNzU5LjVROTc2IDg0MSA5NzYgOTg3UTk3NiAxMTE3IDkxNS41IDExNzQuMFE4NTUgMTIzMSA3MzggMTIzMUg2NjlMNTcxIDY3OFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODguMjkgNDEzLjQwKSByb3RhdGUoODcuNTQpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik02NzAgLTIwUTM4NSAtMjAgMjI3LjUgMTI3LjVRNzAgMjc1IDcwIDUzMVE3MCA3NzcgMTc0LjAgOTY0LjVRMjc4IDExNTIgNDcxLjAgMTI1NC4wUTY2NCAxMzU2IDkxMiAxMzU2UTExMzggMTM1NiAxMzg1IDEzMDRMMTMzMiA5NjdIMTI0OFYxMTYxUTExOTQgMTIwNCAxMTE3LjUgMTIyNy41UTEwNDEgMTI1MSA5NTcgMTI1MVE3OTIgMTI1MSA2NjAuNSAxMTU5LjBRNTI5IDEwNjcgNDU2LjAgODk5LjVRMzgzIDczMiAzODMgNTIyUTM4MyAzMTUgNDc1LjAgMTk5LjBRNTY3IDgzIDczNCA4M1E4MzIgODMgOTMxLjAgMTExLjVRMTAzMCAxNDAgMTA5MSAxODRMMTE2OCA0MDRIMTI1M0wxMTg3IDY0UTEwNzQgMjcgOTM3LjAgMy41UTgwMCAtMjAgNjcwIC0yMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTQuNDkgNDYzLjMyKSByb3RhdGUoNzguMjkpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNy4yMCA1MDcuNzYpIHJvdGF0ZSg2OS44MCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC01NjkuNSAwKSIgZD0iTTQzMiAtMjBRMjE1IC0yMCAzNyA1MUwxMDEgNDExSDE4OUwxOTAgMTk2UTIyNCAxNDcgMjk2LjAgMTE0LjBRMzY4IDgxIDQ0OSA4MVE1OTUgODEgNjc0LjAgMTQyLjBRNzUzIDIwMyA3NTMgMzExUTc1MyAzNjUgNzI5LjAgNDA1LjBRNzA1IDQ0NSA2NjUuNSA0NzcuNVE2MjYgNTEwIDU3Ni4wIDUzOC41UTUyNiA1NjcgNDczLjUgNTk2LjVRNDIxIDYyNiAzNzEuMCA2NjAuNVEzMjEgNjk1IDI4MS41IDc0MC4wUTI0MiA3ODUgMjE4LjAgODQzLjBRMTk0IDkwMSAxOTQgOTc5UTE5NCAxMTYzIDMyNy41IDEyNTkuNVE0NjEgMTM1NiA3MTcgMTM1NlE4ODggMTM1NiAxMDUzIDEzMTNMOTk3IDk5NEg5MDhMOTAxIDExOTBRODIwIDEyNTIgNjkwIDEyNTJRNTc3IDEyNTIgNTEyLjUgMTIwMy4wUTQ0OCAxMTU0IDQ0OCAxMDY5UTQ0OCAxMDA5IDQ5MS41IDk1OC41UTUzNSA5MDggNjI3IDg1N1E3NjEgNzgyIDgyMC41IDc0Mi41UTg4MCA3MDMgOTIxLjAgNjU4LjBROTYyIDYxMyA5ODYuNSA1NTYuMFExMDExIDQ5OSAxMDExIDQyM1ExMDExIDIwNyA4NjIuNSA5My41UTcxNCAtMjAgNDMyIC0yMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI1LjM0IDU0OC4wMCkgcm90YXRlKDYxLjY4KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTYyNS41IDApIiBkPSJNMTY3IDAgMTc5IDczIDM5NyAxMDAgNTk3IDEyMzVINTM2UTQ4MCAxMjM1IDQxMC41IDEyMjguMFEzNDEgMTIyMSAzMTEgMTIxNUwyMzYgOTY2SDE0OUwyMTUgMTM0MUgxMzE4TDEyNTIgOTY2SDExNjRMMTE3NyAxMjE1UTExNDkgMTIyMSAxMDc0LjUgMTIyNy4wUTEwMDAgMTIzMyA5NTIgMTIzM0g4OTNMNjkzIDEwMEw5MDEgNzNMODg5IDBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0NS4zNSA1ODAuMjcpIHJvdGF0ZSg1NC43MCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC0zOTguNSAwKSIgZD0iTTQ2NCAxMDAgNjMxIDc0IDYxOCAwSC0yMEwtNyA3NEwxNjkgMTAwTDM3MCAxMjQxTDIwMyAxMjY4TDIxNiAxMzQxSDg1NUw4NDIgMTI2OEw2NjUgMTI0MVoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTY5LjE0IDYwOS44OCkgcm90YXRlKDQ3LjczKSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTYyNS41IDApIiBkPSJNNDcwIDEwNkg1ODNRNjc5IDEwNiA3OTkuNSAxMTIuNVE5MjAgMTE5IDk1OCAxMjZMMTA3NSA0MDVIMTE1OUwxMDcwIDBILTE1TC0zIDczTDE3NCAxMDBMMzc1IDEyNDJMMjA5IDEyNjhMMjIyIDEzNDFIODg1TDg3MiAxMjY4TDY3MCAxMjQyWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDIuNjMgNjQxLjY0KSByb3RhdGUoMzkuMjQpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjI1LjUgMCkiIGQ9Ik00NzAgMTA2SDU4M1E2NzkgMTA2IDc5OS41IDExMi41UTkyMCAxMTkgOTU4IDEyNkwxMDc1IDQwNUgxMTU5TDEwNzAgMEgtMTVMLTMgNzNMMTc0IDEwMEwzNzUgMTI0MkwyMDkgMTI2OEwyMjIgMTM0MUg4ODVMODcyIDEyNjhMNjcwIDEyNDJaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI0Mi4yMyA2NjkuMTcpIHJvdGF0ZSgzMC4zOCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTM3NSAxMjQyIDIwOCAxMjY4IDIyMSAxMzQxSDEyNzNMMTIxMyAxMDAwSDExMjJMMTEyOCAxMjE3UTEwMTkgMTIzMSA4MDcgMTIzMUg2NjlMNTgyIDczOUg4NjNMOTIwIDg4N0gxMDA5TDkzNiA0NzVIODQ3TDg0MyA2MjdINTYyTDQ3MSAxMTBINjU0UTkwNyAxMTAgOTkyIDEyNkwxMDk1IDM3NEgxMTg2TDExMDIgMEgtMTVMLTMgNzNMMTc0IDEwMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjgxLjgwIDY4OC43NCkgcm90YXRlKDIyLjI2KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTUxMi4wIDApIiBkPSJNNjEzIDEyNDIgNDQ2IDEyNjggNDU5IDEzNDFIMTA3OEwxMDY1IDEyNjhMOTA4IDEyNDJMNzY2IDQzMlE3MjggMjE2IDU5NC41IDk4LjBRNDYxIC0yMCAyNDQgLTIwUTkyIC0yMCAtNCAxMEw1MCAzMTRIMTMzTDEzNyAxMzVRMTY5IDg2IDI1MCA4NlEzMjQgODYgMzc2LjAgMTM3LjBRNDI4IDE4OCA0NDMgMjc2WiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMjMuNzMgNzAyLjUzKSByb3RhdGUoMTQuMTUpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM5NC44NSA3MTEuOTYpIHJvdGF0ZSgwLjk1KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTczOS41IDApIiBkPSJNMTEyMCA3NzRRMTEyMCAxMjMxIDcwNSAxMjMxSDY2OEw0NzEgMTE0UTU1NiAxMDYgNTk1IDEwNlE4MzkgMTA2IDk3OS41IDI4NS4wUTExMjAgNDY0IDExMjAgNzc0Wk03NDIgMTM0MVExMDc5IDEzNDEgMTI1NS4wIDExOTcuNVExNDMxIDEwNTQgMTQzMSA3ODhRMTQzMSA1NDkgMTMyOS41IDM2OC41UTEyMjggMTg4IDEwMzguNSA5Mi4wUTg0OSAtNCA1OTkgLTRMMTgwIDBILTE1TC0zIDczTDE3NCAxMDBMMzc1IDEyNDJMMjA4IDEyNjhMMjIxIDEzNDFaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ny4wNyA3MDguNDMpIHJvdGF0ZSgtOC42OCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTM3NSAxMjQyIDIwOCAxMjY4IDIyMSAxMzQxSDEyNzNMMTIxMyAxMDAwSDExMjJMMTEyOCAxMjE3UTEwMTkgMTIzMSA4MDcgMTIzMUg2NjlMNTgyIDczOUg4NjNMOTIwIDg4N0gxMDA5TDkzNiA0NzVIODQ3TDg0MyA2MjdINTYyTDQ3MSAxMTBINjU0UTkwNyAxMTAgOTkyIDEyNkwxMDk1IDM3NEgxMTg2TDExMDIgMEgtMTVMLTMgNzNMMTc0IDEwMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyLjQ0IDY5MS4wMykgcm90YXRlKC0yMS4xMikgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02MjUuNSAwKSIgZD0iTTQ3MCAxMDZINTgzUTY3OSAxMDYgNzk5LjUgMTEyLjVROTIwIDExOSA5NTggMTI2TDEwNzUgNDA1SDExNTlMMTA3MCAwSC0xNUwtMyA3M0wxNzQgMTAwTDM3NSAxMjQyTDIwOSAxMjY4TDIyMiAxMzQxSDg4NUw4NzIgMTI2OEw2NzAgMTI0MloiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTU1Ljk1IDY3MC4yMykgcm90YXRlKC0yOS45OSkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTMwMiA3MyAyODggMEgtMTA2TC05MiA3M0wxMSAxMDBMNjc5IDEzNTJIOTE5TDExNzMgMTAwTDEyODIgNzNMMTI2OCAwSDcxOUw3MzMgNzNMODcxIDEwMEw4MTAgNDQ3SDMzOEwxNTQgMTAwWk02ODkgMTExOCAzOTQgNTU3SDc5MFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjEyLjA2IDYyOC44NSkgcm90YXRlKC00Mi44Mikgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTY3MCAtMjBRMzg1IC0yMCAyMjcuNSAxMjcuNVE3MCAyNzUgNzAgNTMxUTcwIDc3NyAxNzQuMCA5NjQuNVEyNzggMTE1MiA0NzEuMCAxMjU0LjBRNjY0IDEzNTYgOTEyIDEzNTZRMTEzOCAxMzU2IDEzODUgMTMwNEwxMzMyIDk2N0gxMjQ4VjExNjFRMTE5NCAxMjA0IDExMTcuNSAxMjI3LjVRMTA0MSAxMjUxIDk1NyAxMjUxUTc5MiAxMjUxIDY2MC41IDExNTkuMFE1MjkgMTA2NyA0NTYuMCA4OTkuNVEzODMgNzMyIDM4MyA1MjJRMzgzIDMxNSA0NzUuMCAxOTkuMFE1NjcgODMgNzM0IDgzUTgzMiA4MyA5MzEuMCAxMTEuNVExMDMwIDE0MCAxMDkxIDE4NEwxMTY4IDQwNEgxMjUzTDExODcgNjRRMTA3NCAyNyA5MzcuMCAzLjVRODAwIC0yMCA2NzAgLTIwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NDcuMzMgNTkwLjE5KSByb3RhdGUoLTUyLjQ0KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTczOS41IDApIiBkPSJNMTY3IDEyNjggMTgwIDEzNDFINzk5TDc4NiAxMjY4TDYwOSAxMjQyTDQ5NiA1ODZRNDczIDQ1NiA0NzMgMzg5UTQ3MyAxMjIgNzQwIDEyMlE5MDEgMTIyIDEwMDMuNSAyMDkuMFExMTA2IDI5NiAxMTM2IDQ2M0wxMjczIDEyNDJMMTA5OCAxMjY4TDExMTEgMTM0MUgxNTY3TDE1NTQgMTI2OEwxMzk3IDEyNDJMMTI2MiA0NzFRMTIxNyAyMTggMTA3NC41IDk5LjVROTMyIC0xOSA2ODkgLTE5UTQ0NSAtMTkgMzEyLjUgODkuNVExODAgMTk4IDE4MCAzOTlRMTgwIDQ2MyAyMDAgNTgzTDMxNCAxMjQyWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NzUuNjQgNTQ2LjE3KSByb3RhdGUoLTYyLjA2KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTY4My4wIDApIiBkPSJNMzc1IDEyNDIgMjA4IDEyNjggMjIxIDEzNDFIMTI3M0wxMjEzIDEwMDBIMTEyMkwxMTI4IDEyMTdRMTAxOSAxMjMxIDgwNyAxMjMxSDY2OUw1ODIgNzM5SDg2M0w5MjAgODg3SDEwMDlMOTM2IDQ3NUg4NDdMODQzIDYyN0g1NjJMNDcxIDExMEg2NTRROTA3IDExMCA5OTIgMTI2TDEwOTUgMzc0SDExODZMMTEwMiAwSC0xNUwtMyA3M0wxNzQgMTAwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2OTQuMjEgNTAzLjg1KSByb3RhdGUoLTcwLjU2KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTU2OS41IDApIiBkPSJNNDMyIC0yMFEyMTUgLTIwIDM3IDUxTDEwMSA0MTFIMTg5TDE5MCAxOTZRMjI0IDE0NyAyOTYuMCAxMTQuMFEzNjggODEgNDQ5IDgxUTU5NSA4MSA2NzQuMCAxNDIuMFE3NTMgMjAzIDc1MyAzMTFRNzUzIDM2NSA3MjkuMCA0MDUuMFE3MDUgNDQ1IDY2NS41IDQ3Ny41UTYyNiA1MTAgNTc2LjAgNTM4LjVRNTI2IDU2NyA0NzMuNSA1OTYuNVE0MjEgNjI2IDM3MS4wIDY2MC41UTMyMSA2OTUgMjgxLjUgNzQwLjBRMjQyIDc4NSAyMTguMCA4NDMuMFExOTQgOTAxIDE5NCA5NzlRMTk0IDExNjMgMzI3LjUgMTI1OS41UTQ2MSAxMzU2IDcxNyAxMzU2UTg4OCAxMzU2IDEwNTMgMTMxM0w5OTcgOTk0SDkwOEw5MDEgMTE5MFE4MjAgMTI1MiA2OTAgMTI1MlE1NzcgMTI1MiA1MTIuNSAxMjAzLjBRNDQ4IDExNTQgNDQ4IDEwNjlRNDQ4IDEwMDkgNDkxLjUgOTU4LjVRNTM1IDkwOCA2MjcgODU3UTc2MSA3ODIgODIwLjUgNzQyLjVRODgwIDcwMyA5MjEuMCA2NTguMFE5NjIgNjEzIDk4Ni41IDU1Ni4wUTEwMTEgNDk5IDEwMTEgNDIzUTEwMTEgMjA3IDg2Mi41IDkzLjVRNzE0IC0yMCA0MzIgLTIwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MDUuOTIgNDYxLjI5KSByb3RhdGUoLTc4LjY3KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTYyNS41IDApIiBkPSJNMTY3IDAgMTc5IDczIDM5NyAxMDAgNTk3IDEyMzVINTM2UTQ4MCAxMjM1IDQxMC41IDEyMjguMFEzNDEgMTIyMSAzMTEgMTIxNUwyMzYgOTY2SDE0OUwyMTUgMTM0MUgxMzE4TDEyNTIgOTY2SDExNjRMMTE3NyAxMjE1UTExNDkgMTIyMSAxMDc0LjUgMTIyNy4wUTEwMDAgMTIzMyA5NTIgMTIzM0g4OTNMNjkzIDEwMEw5MDEgNzNMODg5IDBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcxMS43MSA0MTMuNDApIHJvdGF0ZSgtODcuNTQpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxjaXJjbGUgY3g9IjEzNS4wIiBjeT0iMzAzLjYiIHI9IjkiLz4KPGNpcmNsZSBjeD0iNjY1LjAiIGN5PSIzMDMuNiIgcj0iOSIvPgo8L2c+Cjwvc3ZnPg==" alt="" width="44" height="44">
+   IES Alixar
+  </a>
+  <button id="menu" aria-expanded="false" aria-controls="nav">Menú</button>
+  <nav id="nav" aria-label="Principal">
+   <a href="#inicio">Inicio</a>
+   <a href="#centro">El centro</a>
+   <a href="#secretaria">Secretaría</a>
+   <a href="#oferta">ESO y Bachillerato</a>
+   <a href="#fp">Formación Profesional</a>
+   <a href="#acredita">ACREDITA</a>
+   <a href="#convivencia">Convivencia</a>
+  </nav>
+  <div class="navig" aria-label="Instagram">
+   <a href="https://www.instagram.com/ies_alixar/" title="Instagram @ies_alixar" aria-label="Instagram @ies_alixar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+  </div>
+ </div>
+</header>
+
+<main id="main" tabindex="-1">
+<!-- ============ INICIO ============ -->
+<section data-page="inicio">
+ <div class="band wrap hero">
+  <div>
+   <h1>IES Alixar</h1>
+   <p class="lead" style="margin-top:14px">Instituto público de Castilleja de la Cuesta, en el Aljarafe sevillano. Impartimos ESO, Bachillerato y Formación Profesional de las familias de Sanidad, Informática y Comunicaciones, y Seguridad y Medio Ambiente.</p>
+   <p>Un centro inclusivo, bilingüe en inglés y abierto a Europa, que pone la convivencia y el bienestar del alumnado en el centro de su proyecto.</p>
+   <div class="row">
+    <a class="btn" href="#oferta">Qué puedo estudiar</a>
+    <a class="btn alt" href="#secretaria">Secretaría</a>
+   </div>
+  </div>
+  <aside class="avisos" aria-labelledby="av">
+   <h3 id="av">Curso 2026/27</h3>
+   <ul>
+    <li><a href="https://drive.google.com/file/d/1u_rcIVLD_dSvkrxkO-KsLnP6Bqg1R-V5/view">Oferta formativa del curso 26-27</a><span>Materias y optativas por curso</span></li>
+    <li><a href="https://drive.google.com/file/d/1x2i_ucU8sHoNsAkaYMD18kuUTWoH7yR8/view">Libros de texto de Bachillerato</a><span>Listado del curso 26-27</span></li>
+    <li><a href="https://drive.google.com/file/d/1bt0aJ9QCRGAakWUMd08jaFK8oxcDZO-f/view">Calendario de exámenes de 1.º de Bachillerato</a><span>Documento en Drive</span></li>
+    <li><a href="#centro">Plan de Centro actualizado</a><span>Aprobado por el Consejo Escolar el 12/11/2026</span></li>
+   </ul>
+  </aside>
+ </div>
+ <svg class="scene" viewBox="0 0 1200 380" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Fachada encalada con arcos, friso de azulejo y olivos">
+  <defs>
+   <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fb0ec"/><stop offset="1" stop-color="#d9e9fb"/></linearGradient>
+   <linearGradient id="wall" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef0f4"/></linearGradient>
+  </defs>
+  <rect width="1200" height="380" fill="url(#sky)"/>
+  <circle class="sun" cx="1040" cy="70" r="46" fill="#f3b61f"/>
+  <path d="M0 260 Q200 210 420 240 T860 230 T1200 245 V380 H0Z" fill="#b9cfe9"/>
+  <rect x="150" y="120" width="900" height="200" fill="url(#wall)"/>
+  <rect x="150" y="104" width="900" height="20" fill="#e4472f" opacity=".9"/>
+  <rect x="150" y="98" width="900" height="8" fill="#c23a26"/>
+  <g id="arches"></g>
+  <rect x="150" y="268" width="900" height="34" fill="url(#az)"/>
+  <rect x="150" y="300" width="900" height="6" fill="#163d86"/>
+  <rect x="1050" y="120" width="10" height="186" fill="#d7dbe4"/>
+  <rect x="0" y="306" width="1200" height="74" fill="#e8c46a"/>
+  <rect x="0" y="306" width="1200" height="8" fill="#d6ad4b"/>
+  <ellipse cx="120" cy="362" rx="80" ry="10" fill="#c9a244"/>
+  <use href="#olive" x="40" y="160" width="160" height="200"/>
+  <ellipse cx="1110" cy="366" rx="70" ry="9" fill="#c9a244"/>
+  <use href="#olive" x="1040" y="176" width="140" height="190"/>
+  <text x="600" y="90" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="800" font-size="30" fill="#163d86" >IES ALIXAR</text>
+ </svg>
+
+ <div class="band igband" id="ig-home">
+  <div class="wrap">
+   <div class="ighead">
+    <div>
+     <h2>Lo que pasa en el Alixar, en Instagram</h2>
+     <p class="lead">Excursiones, proyectos, Erasmus+, prácticas en laboratorio y en empresa, la biblioteca… Lo contamos cada semana en nuestras dos cuentas.</p>
+    </div>
+    <div class="row" style="margin:0"><a class="btn red" href="https://www.instagram.com/ies_alixar/">@ies_alixar</a><a class="btn red" href="https://www.instagram.com/biblioalixar/">@BiblioAlixar</a></div>
+   </div>
+   <div class="profiles">
+    <div class="prof"><svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="url(#az)" stroke="#f3b61f" stroke-width="2"/></svg><div><b>@ies_alixar</b><span>La vida del centro</span></div><a class="btn" href="https://www.instagram.com/ies_alixar/">Seguir</a></div>
+    <div class="prof"><svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="url(#az2)" stroke="#f3b61f" stroke-width="2"/></svg><div><b>@BiblioAlixar</b><span>Lecturas, reseñas y actividades de la biblioteca</span></div><a class="btn" href="https://www.instagram.com/biblioalixar/">Seguir</a></div>
+   </div>
+   <div class="grid-ig" data-ig="home"></div>
+   <p class="small" style="color:#c9d6f5;margin-top:12px" data-ig-note>Vista previa del diseño: con la web publicada en el dominio del centro, aquí aparecen solas las últimas publicaciones de las dos cuentas.</p>
+  </div>
+ </div>
+
+ <div class="band wrap">
+  <h2>Accesos directos</h2>
+  <div class="tiles six">
+   <a class="tile" href="https://www.juntadeandalucia.es/educacion/secretariavirtual/"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4zM8 9h8M8 13h8M8 17h5"/></svg></span><h3>Secretaría Virtual</h3><p>Solicitudes y matrícula en línea</p></a>
+   <a class="tile" href="https://www.juntadeandalucia.es/educacion/portalseneca/web/pasen"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><h3>iPasen</h3><p>Comunicación con las familias</p></a>
+   <a class="tile" href="https://educacionadistancia.juntadeandalucia.es/centros/sevilla/login/index.php"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><h3>Moodle Centros</h3><p>Aulas virtuales (Sevilla)</p></a>
+   <a class="tile" href="https://biblioalixar.blogspot.com/"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 5v16"/></svg></span><h3>Biblioteca</h3><p>Blog, préstamos y club de lectura</p></a>
+   <a class="tile" href="#centro"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6zM14 2v6h6"/></svg></span><h3>Plan de Centro</h3><p>Proyecto Educativo, ROF y Gestión</p></a>
+   <a class="tile" href="#departamentos" data-go="centro"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V9l9-6 9 6v12M9 21v-6h6v6"/></svg></span><h3>Departamentos</h3><p>Webs de cada departamento</p></a>
+  </div>
+ </div>
+
+ <div class="band wrap">
+  <h2>Nuestro proyecto educativo, en cinco ideas</h2>
+  <p class="lead">Así resume el Proyecto Educativo las señas de identidad del IES Alixar.</p>
+  <div class="pillars" style="margin-top:18px">
+   <div class="pillar"><i style="background:var(--blue)"></i><h3>Equidad e inclusión</h3><p>La atención a la diversidad es el eje central. PROA+ y el Programa ZTS garantizan que nadie se quede atrás.</p></div>
+   <div class="pillar"><i style="background:var(--albero)"></i><h3>Innovación y FP</h3><p>Metodologías activas, trabajo por retos y una FP dual en alternancia con empresas y abierta a Europa.</p></div>
+   <div class="pillar"><i style="background:var(--red)"></i><h3>Convivencia restaurativa</h3><p>El conflicto como oportunidad para aprender: mediación, alumnado ayudante y reparación antes que sanción.</p></div>
+   <div class="pillar"><i style="background:#5d7c40"></i><h3>Escuela digital</h3><p>Uso didáctico y seguro de la tecnología, ciberseguridad y ciudadanía digital responsable.</p></div>
+   <div class="pillar"><i style="background:var(--blue-d)"></i><h3>Comunidad abierta</h3><p>Dirección participativa, corresponsabilidad con las familias y alianzas con el Ayuntamiento y el tejido productivo.</p></div>
+  </div>
+  <div class="figs">
+   <div><b>3 etapas</b><span>ESO, Bachillerato y FP</span></div>
+   <div><b>6 ciclos</b><span>y un curso de especialización en Ciberseguridad</span></div>
+   <div><b>25</b><span>nacionalidades entre nuestro alumnado</span></div>
+   <div><b>2014/15</b><span>centro bilingüe en inglés desde ese curso</span></div>
+   <div><b>15.000</b><span>ejemplares, aproximadamente, en la biblioteca</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- ============ EL CENTRO ============ -->
+<section data-page="centro">
+ <div class="band pagehead"><div class="wrap"><h1>El centro</h1><p class="lead">Quiénes somos, qué nos guía y cómo nos organizamos.</p></div></div>
+ <div class="band wrap side">
+  <div>
+   <h2>Quiénes somos</h2>
+   <p>El IES Alixar está en Castilleja de la Cuesta, en el Área Metropolitana de Sevilla, a unos 6 km de la capital. Recibimos alumnado de Castilleja, Camas, Bormujos y otras localidades del Aljarafe; en Formación Profesional, de toda la comarca y de Sevilla capital.</p>
+   <p>Trabajamos en dos turnos: por la mañana, ESO, Bachillerato y ciclos formativos; por la tarde, varios grupos de FP. Somos un centro diverso, con alumnado de 25 nacionalidades, y lo entendemos como una riqueza que exige una respuesta educativa inclusiva y equitativa.</p>
+   <h3 style="margin-top:22px">Qué alumnado queremos formar</h3>
+   <ul class="clean">
+    <li><b>En la ESO</b>, personas que se expresan bien en varias lenguas, razonan con método científico, usan la tecnología con ética y seguridad, y ejercen una ciudadanía democrática e inclusiva.</li>
+    <li><b>En Bachillerato</b>, madurez intelectual, análisis crítico y trabajo autónomo para continuar en la universidad o en la FP de grado superior.</li>
+    <li><b>En Formación Profesional</b>, profesionales cualificados y empleables, formados en talleres, laboratorios y empresas del entorno.</li>
+   </ul>
+   <h3 style="margin-top:22px">Principios que compartimos</h3>
+   <p>Aprendizaje competencial frente al memorístico, evaluación formativa, Diseño Universal para el Aprendizaje, coeducación e igualdad de género, y compromiso con los Objetivos de Desarrollo Sostenible.</p>
+  </div>
+  <div>
+   <div class="panel">
+    <h3>Equipo directivo</h3>
+    <ul class="people">
+     <li><b>Pedro Barco Bernal</b><span>Dirección</span></li>
+     <li><b>Francisca Arredondo Martín</b><span>Vicedirección</span></li>
+     <li><b>Mª Dolores Ortiz Nieto</b><span>Secretaría</span></li>
+     <li><b>María Carrero Jurado</b><span>Jefatura de Estudios</span></li>
+     <li><b>Luisa Fernanda Carrascal Moreno</b><span>Jefatura de Estudios de Adultos</span></li>
+     <li><b>Mª Victoriana Domínguez Gómez</b><span>Jefatura adjunta</span></li>
+     <li><b>Juan Bosco Rastrero Muñoz</b><span>Jefatura adjunta</span></li>
+     <li><b>Alfonso Lara Garay</b><span>Jefatura adjunta</span></li>
+    </ul>
+   </div>
+   <div class="panel">
+    <h3>Dónde estamos</h3>
+    <p style="margin:0">Avda. de la Unidad, s/n<br>41950 Castilleja de la Cuesta (Sevilla)<br>Teléfono: 955 62 25 66</p>
+    <div class="row"><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=IES+Alixar+Castilleja+de+la+Cuesta">Cómo llegar</a></div>
+   </div>
+  </div>
+ </div>
+ <div class="band wrap" style="padding-top:0">
+  <h2>Plan de Centro</h2>
+  <p>Versión aprobada por el Consejo Escolar el 12 de noviembre de 2026, adaptada al Decreto 483/2026 y a la Orden de 31 de agosto de 2026.</p>
+  <div class="embed drive" style="margin-top:14px">
+   <div class="fb"><span>Carpeta del Plan de Centro en Google Drive.<br><a href="https://drive.google.com/drive/folders/1JPtLXRM_8I23KhPwzJLqeyeZYA8AfTwF">Abrir la carpeta</a></span></div>
+   <iframe src="https://drive.google.com/embeddedfolderview?id=1JPtLXRM_8I23KhPwzJLqeyeZYA8AfTwF#grid" title="Carpeta del Plan de Centro en Google Drive" loading="lazy"></iframe>
+  </div>
+  <p class="src"><a href="https://drive.google.com/drive/folders/1JPtLXRM_8I23KhPwzJLqeyeZYA8AfTwF">Abrir la carpeta en Drive</a></p>
+ </div>
+ <div class="band wrap" id="departamentos" style="padding-top:0">
+  <h2>Departamentos</h2>
+  <p>Cada departamento tiene su propia web con programaciones, materiales y novedades.</p>
+  <div class="tiles" data-deps style="margin-top:14px"></div>
+ </div>
+</section>
+
+<!-- ============ ESO Y BACHILLERATO ============ -->
+<section data-page="oferta">
+ <div class="band pagehead"><div class="wrap"><h1>ESO y Bachillerato</h1><p class="lead">Oferta del curso 2026/27 según el Proyecto Educativo. Todos los cursos de ESO tienen grupos bilingües en inglés.</p></div></div>
+ <div class="band wrap">
+  <h2>Educación Secundaria Obligatoria</h2>
+  <div class="tabs" role="tablist" data-tabs="eso">
+   <button role="tab" aria-selected="true" data-t="e1">1.º ESO</button><button role="tab" aria-selected="false" data-t="e2">2.º ESO</button><button role="tab" aria-selected="false" data-t="e3">3.º ESO</button><button role="tab" aria-selected="false" data-t="e4">4.º ESO</button>
+  </div>
+  <div class="course on" id="e1"><div class="two">
+   <div><h3>1.º de ESO</h3><p>Régimen general, apoyo, compensatoria y bilingüe. En el grupo bilingüe se imparten en inglés Biología y Geología, Geografía e Historia, Educación Física y Educación Plástica (11 horas).</p><p>Segunda lengua: Francés o Área Lingüística de Carácter Transversal, para reforzar la competencia lingüística.</p></div>
+   <div class="panel"><h3>Optativas (se elige una)</h3><ul class="chips"><li>Oratoria y Debate</li><li>Computación y Robótica</li><li>Cultura Clásica</li><li>Taller de Técnicas Artísticas</li></ul></div>
+  </div></div>
+  <div class="course" id="e2"><div class="two">
+   <div><h3>2.º de ESO</h3><p>Régimen general, apoyo, compensatoria y bilingüe. En el grupo bilingüe se imparten en inglés Matemáticas, Física y Química y Tecnología y Digitalización (14 horas).</p></div>
+   <div class="panel"><h3>Optativas (se elige una)</h3><ul class="chips"><li>Oratoria y Debate</li><li>Segunda Lengua Extranjera</li><li>Proyecto de Educación Plástica y Audiovisual</li><li>Computación y Robótica</li><li>Cultura Clásica</li></ul></div>
+  </div></div>
+  <div class="course" id="e3"><div class="two">
+   <div><h3>3.º de ESO</h3><p>Régimen general, bilingüe (16 horas en inglés) y primer curso del Programa de Diversificación Curricular, organizado en un ámbito lingüístico y social y otro científico-tecnológico.</p></div>
+   <div class="panel"><h3>Optativas (se elige una)</h3><ul class="chips"><li>Computación y Robótica</li><li>Cultura del Flamenco</li><li>Segunda Lengua Extranjera</li><li>Cultura Clásica</li><li>Oratoria y Debate</li><li>Diseño e Impresión 3D</li></ul></div>
+  </div></div>
+  <div class="course" id="e4"><div class="two">
+   <div><h3>4.º de ESO</h3><ul class="clean"><li><b>Enseñanzas académicas</b>, hacia el Bachillerato: itinerario de Ciencias y Tecnología o de Humanidades y Ciencias Sociales.</li><li><b>Enseñanzas aplicadas</b>, hacia la Formación Profesional, con Formación y Orientación Personal y Profesional y Tecnología.</li><li><b>2.º del Programa de Diversificación Curricular.</b></li></ul><p>Geografía e Historia y Educación Física se imparten en inglés en el grupo bilingüe.</p></div>
+   <div class="panel"><h3>Optativas</h3><ul class="chips"><li>Francés</li><li>Música</li><li>Tecnología</li><li>Digitalización</li><li>Expresión Artística</li><li>Ampliación de Cultura Clásica</li><li>Cultura Científica</li><li>Filosofía</li><li>Dibujo Técnico</li><li>Medios de Comunicación</li><li>Métodos de las Ciencias</li><li>Aprendizaje Social y Emocional</li></ul></div>
+  </div></div>
+ </div>
+ <div class="band wrap" style="padding-top:0">
+  <h2>Bachillerato</h2>
+  <p>Cada modalidad da preferencia para determinados grados universitarios y ciclos de grado superior: conviene elegirla pensando en lo que se quiere estudiar después. La Filosofía de 1.º y la Historia de la Filosofía de 2.º se imparten en inglés.</p>
+  <div class="tiles" style="margin-top:16px">
+   <div class="cycle"><span class="tag gs">1.º y 2.º</span><h3>Ciencias y Tecnología</h3><p class="small">Itinerario de Ciencias de la Salud y Medio Ambiente (Biología, Química…) o Ciencias-Tecnológico (Dibujo Técnico, Física, Tecnología e Ingeniería).</p></div>
+   <div class="cycle"><span class="tag gs">1.º y 2.º</span><h3>Humanidades y Ciencias Sociales</h3><p class="small">Itinerario de Humanidades (Latín, Griego, Historia del Arte…) o de Ciencias Sociales (Matemáticas Aplicadas, Economía, Empresa…).</p></div>
+   <div class="cycle"><span class="tag gs">1.º</span><h3>Bachillerato General</h3><p class="small">Matemáticas Generales y dos materias de otras modalidades a elegir, para un perfil más abierto.</p></div>
+  </div>
+  <div class="row"><a class="btn alt" href="https://drive.google.com/file/d/1aG-2pvzx9Knt4n6tOqy5J-rAPJeiFEKu/view">Breve descripción de las optativas</a></div>
+ </div>
+ <div class="band" style="background:var(--tile)">
+  <div class="wrap">
+   <h2>Cómo matricularse</h2>
+   <p>La admisión y la matrícula se tramitan en los canales oficiales de la Consejería. Allí están siempre los plazos, instrucciones y formularios vigentes.</p>
+   <div class="official" style="margin-top:14px">
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/portales/web/escolarizacion"><h3>Portal de Escolarización</h3><p>Calendario, admisión y matrícula de cada curso</p><b>juntadeandalucia.es</b></a>
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/secretariavirtual/"><h3>Secretaría Virtual</h3><p>Solicitudes y sobre electrónico de matrícula</p><b>juntadeandalucia.es</b></a>
+    <a class="tile" href="#claves"><h3>Clave iANDE e iPasen</h3><p>Dónde encontrar la clave y cómo recuperar el acceso</p><b>Secretaría</b></a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- ============ FP ============ -->
+<section data-page="fp">
+ <div class="band pagehead"><div class="wrap"><h1>Formación Profesional</h1><p class="lead">Seis ciclos formativos y un curso de especialización en tres familias profesionales, con formación en empresa y movilidades Erasmus+. ¿Tienes experiencia laboral? Mira también <a href="#acredita">ACREDITA</a>.</p></div></div>
+ <div class="band wrap">
+  <div class="fam">
+   <h3>Informática y Comunicaciones</h3>
+   <div class="tiles">
+    <div class="cycle"><span class="tag">Grado medio</span><h3>Sistemas Microinformáticos y Redes</h3><dl><dt>Duración</dt><dd>2.000 horas</dd><dt>Turno</dt><dd>Mañana y tarde</dd><dt>Salidas</dt><dd>Soporte informático, redes de datos, montaje y reparación de equipos</dd></dl></div>
+    <div class="cycle"><span class="tag gs">Grado superior</span><h3>Desarrollo de Aplicaciones Web</h3><dl><dt>Duración</dt><dd>2.000 horas</dd><dt>Turno</dt><dd>Mañana y tarde</dd><dt>Salidas</dt><dd>Programación web y multimedia, desarrollo en entornos web</dd></dl></div>
+    <div class="cycle"><span class="tag ce">Especialización</span><h3>Ciberseguridad en entornos de las tecnologías de la información</h3><dl><dt>Más info</dt><dd><a href="https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza/contenidos/-/contenidos/detalle/0-1-5-2-6-ce-ceti-ciberseguridad-en-entornos-de-las-tecnologias-de-la-informacion">Ficha en el portal de FP</a></dd></dl></div>
+   </div>
+  </div>
+  <div class="fam">
+   <h3>Sanidad</h3>
+   <div class="tiles">
+    <div class="cycle"><span class="tag">Grado medio</span><h3>Farmacia y Parafarmacia</h3><dl><dt>Duración</dt><dd>2.000 horas</dd><dt>Turno</dt><dd>Mañana y tarde; también en oferta modular por la tarde</dd><dt>Salidas</dt><dd>Oficina de farmacia, parafarmacia, almacén de medicamentos, farmacia hospitalaria</dd></dl></div>
+    <div class="cycle"><span class="tag gs">Grado superior</span><h3>Laboratorio Clínico y Biomédico</h3><dl><dt>Duración</dt><dd>2.000 horas</dd><dt>Turno</dt><dd>Mañana</dd><dt>Salidas</dt><dd>Laboratorio de diagnóstico clínico, investigación, toxicología</dd></dl></div>
+   </div>
+  </div>
+  <div class="fam">
+   <h3>Seguridad y Medio Ambiente</h3>
+   <div class="tiles">
+    <div class="cycle"><span class="tag gs">Grado superior</span><h3>Química y Salud Ambiental</h3><dl><dt>Duración</dt><dd>2.000 horas</dd><dt>Turno</dt><dd>Mañana</dd><dt>Salidas</dt><dd>Gestión ambiental, control sanitario de aguas, alimentos, aire y residuos, control de plagas</dd></dl></div>
+   </div>
+  </div>
+ </div>
+ <div class="band" style="background:var(--tile)">
+  <div class="wrap two">
+   <div>
+    <h2>Formación en la empresa</h2>
+    <p>Con la nueva FP, todos los ciclos tienen carácter dual: parte de la formación se realiza en empresas u organismos del sector, en la fase de formación en empresa.</p>
+    <ul class="clean">
+     <li>Cada estudiante tiene un plan de formación individual con las actividades y el calendario de sus estancias.</li>
+     <li>Una tutoría dual en el centro y otra en la empresa siguen su aprendizaje y lo valoran en la evaluación.</li>
+     <li>En la oferta modular, la estancia en empresa se organiza, por norma general, en un único periodo.</li>
+    </ul>
+   </div>
+   <div class="panel">
+    <h3>Algunas entidades colaboradoras</h3>
+    <p class="small">La familia de Informática colabora con más de cincuenta empresas e instituciones. Entre ellas:</p>
+    <ul class="logos"><li>Ayesa</li><li>Deloitte</li><li>NTT Data</li><li>Kyndryl</li><li>Ricoh</li><li>Atos</li><li>Guadaltel</li><li>Wellness Telecom</li><li>Servicio Andaluz de Salud</li><li>Universidad Pablo de Olavide</li><li>Hospital San Juan de Dios del Aljarafe</li><li>Ayuntamiento de Castilleja de la Cuesta</li></ul>
+   </div>
+  </div>
+ </div>
+ <div class="band wrap two">
+  <div>
+   <h2>Erasmus+</h2>
+   <p>El centro está acreditado en Erasmus+ para FP (KA121-VET) y para Educación Superior (KA131-HED).</p>
+   <ul class="clean">
+    <li><b>Grado medio</b>: a través del consorcio «Aljarafe en Europa», coordinado por el IES Tartesos. Estancias de 15 días en Portugal y de larga duración en Italia, Alemania o Malta.</li>
+    <li><b>Grado superior</b>: gestión propia. Formación en empresa en Europa durante unos tres meses, también para recién titulados.</li>
+    <li><b>Profesorado</b>: movilidades de observación (job shadowing).</li>
+   </ul>
+   <div class="row"><a class="btn" href="https://sites.google.com/g.educaand.es/web-iesalixar-org/oferta-educativa/fp/erasmus">Convocatorias y bases</a></div>
+  </div>
+  <div>
+   <h2>Aula virtual</h2>
+   <p>Los módulos de FP usan Moodle Centros, la plataforma de la Consejería. Se entra con las credenciales de iPasen.</p>
+   <div class="row"><a class="btn" href="https://educacionadistancia.juntadeandalucia.es/centros/sevilla/login/index.php">Moodle Centros Sevilla</a></div>
+  </div>
+ </div>
+ <div class="band" style="background:var(--tile)">
+  <div class="wrap">
+   <h2>Trámites de Formación Profesional</h2>
+   <p>Toda la información y los formularios vigentes están en los portales oficiales de la Junta de Andalucía.</p>
+   <div class="official" style="margin-top:14px">
+    <a class="tile" href="https://juntadeandalucia.es/temas/estudiar/fp/matriculacion.html"><h3>Admisión y matrícula en FP</h3><p>Solicitud, reserva de plaza y matrícula por la Secretaría Virtual</p><b>juntadeandalucia.es</b></a>
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/portales/es/web/escolarizacion/formacion-profesional/calendario-general-fp"><h3>Calendario de escolarización</h3><p>Plazos del curso para grado medio, superior y especialización</p><b>Portal de Escolarización</b></a>
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/portales/web/formacion-profesional-andaluza"><h3>Portal de FP Andaluza</h3><p>Oferta, modalidades, normativa y novedades</p><b>juntadeandalucia.es</b></a>
+    <a class="tile" href="https://www.juntadeandalucia.es/boja/2026/65/2"><h3>Anulaciones, renuncias y bajas de oficio</h3><p>Orden de 18 de septiembre de 2025 y modelos oficiales (BOJA n.º 65, de 7/4/2026)</p><b>BOJA</b></a>
+    <a class="tile" href="https://juntadeandalucia.es/temas/estudiar/adultos/examenes-libres.html"><h3>Pruebas de obtención de título (POT)</h3><p>Títulos de Técnico y Técnico Superior sin cursar el ciclo</p><b>juntadeandalucia.es</b></a>
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza/quiero-formarme/pruebas-y-procedimientos/pruebas-obtencion-titulos"><h3>POT: convocatoria y sedes</h3><p>Convocatoria anual, módulos y comisiones de evaluación</p><b>Portal de FP Andaluza</b></a>
+   </div>
+   <h3 style="margin-top:28px">Vídeos de FP Andaluza</h3>
+   <div class="vids">
+    <figure><div class="embed"><div class="fb"><a href="https://www.youtube.com/watch?v=JTm-T0u-WWQ">Ver en YouTube</a></div><iframe src="https://www.youtube-nocookie.com/embed/JTm-T0u-WWQ" title="Estudios y modalidades de la Formación Profesional Andaluza" loading="lazy" allowfullscreen></iframe></div><figcaption>Estudios y modalidades de la Formación Profesional Andaluza</figcaption></figure>
+    <figure><div class="embed"><div class="fb"><a href="https://www.youtube.com/watch?v=1-su2x-AsqM">Ver en YouTube</a></div><iframe src="https://www.youtube-nocookie.com/embed/1-su2x-AsqM" title="Curso presencial: grado medio y grado superior" loading="lazy" allowfullscreen></iframe></div><figcaption>Curso presencial: grado medio y grado superior</figcaption></figure>
+   </div>
+   <p class="src">Canal oficial de YouTube «Formación Profesional Andaluza».</p>
+  </div>
+ </div>
+</section>
+
+<!-- ============ SECRETARÍA ============ -->
+<section data-page="secretaria">
+ <div class="band pagehead"><div class="wrap"><h1>Secretaría</h1><p class="lead">Atención a familias, alumnado y ciudadanía para los trámites administrativos del centro.</p></div></div>
+ <div class="band wrap side">
+  <div>
+   <h2>Cómo hacer un trámite</h2>
+   <p>La mayoría de los trámites (solicitudes, matrícula, certificados) se presentan por la Secretaría Virtual de la Junta de Andalucía, sin necesidad de venir al centro. Plazos e instrucciones se publican siempre en los portales oficiales.</p>
+   <div class="official" style="margin-top:14px">
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/secretariavirtual/"><h3>Secretaría Virtual</h3><p>Solicitudes y matrícula en línea</p><b>juntadeandalucia.es</b></a>
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/portales/web/escolarizacion"><h3>Escolarización</h3><p>Calendarios y procedimientos de cada curso</p><b>juntadeandalucia.es</b></a>
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/portalseneca/web/pasen"><h3>iPasen</h3><p>Comunicación con el centro y clave iANDE</p><b>juntadeandalucia.es</b></a>
+   </div>
+  </div>
+  <div>
+   <div class="panel">
+    <h3>Horario de atención</h3>
+    <p style="margin:0" data-horario><b style="font-size:22px">9:00 a 14:00</b><br><span class="small">Días lectivos</span></p>
+   </div>
+   <div class="panel">
+    <h3>Contacto</h3>
+    <p style="margin:0">Avda. de la Unidad, s/n<br>41950 Castilleja de la Cuesta (Sevilla)<br>Teléfono: 955 62 25 66</p>
+   </div>
+  </div>
+ </div>
+ <div class="band" style="background:var(--tile)" id="claves">
+  <div class="wrap">
+   <h2>Claves de acceso: iANDE e iPasen</h2>
+   <div class="two" style="margin-top:6px">
+    <div class="panel">
+     <h3>Clave iANDE</h3>
+     <p>Es el Identificador Andaluz Educativo: permite hacer por internet la admisión, la matrícula y otros trámites, para el alumnado y para sus madres, padres o tutores legales.</p>
+     <ul class="clean"><li>Está en iPasen, en un mensaje del Administrador PASEN.</li><li>Si necesitas una clave nueva, se solicita de forma presencial en cualquier centro educativo.</li></ul>
+     <p class="src">Fuente: <a href="https://juntadeandalucia.es/temas/estudiar/fp/matriculacion.html">Junta de Andalucía · Admisión y matriculación</a> y <a href="https://www.juntadeandalucia.es/temas/estudiar/primaria-eso/matriculacion.html">Admisión y matriculación en Primaria y ESO</a></p>
+    </div>
+    <div class="panel">
+     <h3>¿Has olvidado la contraseña de iPasen?</h3>
+     <p>No hace falta venir al centro. En la pantalla de acceso de PASEN o de la app iPasen están las opciones para recuperar la contraseña o para obtener credenciales nuevas si no las conoces («No tengo acceso»).</p>
+     <div class="row"><a class="btn" href="https://www.juntadeandalucia.es/educacion/portalseneca/web/pasen/inicio">Ir a PASEN</a></div>
+     <p class="src">iPasen es la aplicación oficial de la Junta de Andalucía, gratuita en Google Play y App Store.</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- ============ ACREDITA ============ -->
+<section data-page="acredita">
+ <div class="band pagehead"><div class="wrap"><h1>ACREDITA</h1><p class="lead">Acreditación oficial de las competencias profesionales adquiridas con la experiencia laboral o con formación no reglada.</p></div></div>
+ <div class="band wrap side">
+  <div>
+   <h2>Información oficial</h2>
+   <p>«Andalucía Acredita» es el procedimiento del Instituto Andaluz de Cualificaciones Profesionales. Toda la información, los requisitos y la solicitud están en su portal.</p>
+   <div class="official" style="margin-top:14px">
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/portales/web/iacp/andalucia-acredita"><h3>Andalucía Acredita</h3><p>Portal oficial del procedimiento</p><b>IACP · Junta de Andalucía</b></a>
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/portales/web/iacp/andalucia-acredita/que-es"><h3>Qué es y qué se obtiene</h3><p>Cualificaciones y unidades de competencia</p><b>IACP</b></a>
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/portales/web/iacp/andalucia-acredita/convocatorias"><h3>Convocatorias</h3><p>Procedimiento abierto y convocatorias específicas</p><b>IACP</b></a>
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/portales/web/iacp/andalucia-acredita/informacion-y-orientacion"><h3>Información y orientación</h3><p>Antes de presentar la solicitud</p><b>IACP</b></a>
+    <a class="tile" href="https://www.juntadeandalucia.es/educacion/secretariavirtual/sede/"><h3>Mis trámites</h3><p>Solicitud y seguimiento en la Oficina Virtual</p><b>juntadeandalucia.es</b></a>
+   </div>
+  </div>
+  <div>
+   <div class="panel">
+    <h3>Teléfono de información</h3>
+    <p style="margin:0"><b style="font-size:22px">900 848 000</b><br><span class="small">Atención a la ciudadanía de Andalucía Acredita</span></p>
+   </div>
+   <div class="panel">
+    <h3>ACREDITA en el IES Alixar</h3>
+    <p style="margin:0">El centro participa en el procedimiento en sus familias profesionales. <a href="https://sites.google.com/iesalixar.org/acredita-en-el-ies-alixar">Web de ACREDITA del centro</a></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- ============ CONVIVENCIA Y PROGRAMAS ============ -->
+<section data-page="convivencia">
+ <div class="band pagehead"><div class="wrap"><h1>Convivencia y programas</h1><p class="lead">Bienestar, apoyo al aprendizaje, biblioteca, bilingüismo y los planes en los que participa el centro.</p></div></div>
+ <div class="band wrap two">
+  <div>
+   <h2>Convivencia restaurativa</h2>
+   <p>En el Alixar el conflicto se entiende como una oportunidad pedagógica. Priorizamos la mediación y el compromiso de reparación sobre la sanción.</p>
+   <ul class="clean">
+    <li><b>Departamento de Convivencia e Igualdad</b>: trabaja la gestión emocional, la asertividad y el bienestar del alumnado.</li>
+    <li><b>Alumnado Ayudante y Mentor</b>: estudiantes formados para acompañar y mediar entre iguales.</li>
+    <li><b>Coordinación de Bienestar y Protección</b>: referente de seguridad y buen trato para toda la comunidad.</li>
+    <li><b>Compromisos de convivencia</b> con las familias.</li>
+   </ul>
+   <div class="row"><a class="btn alt" href="https://drive.google.com/file/d/1cIuzuRoGs8hNf13r9523unPR3uKpjxow/view">Plan de Convivencia</a></div>
+  </div>
+  <div>
+   <h2>Refuerzo por la tarde: PROA</h2>
+   <p>Actividades gratuitas de refuerzo y apoyo para el alumnado propuesto por su equipo educativo, de lunes a jueves de 16:00 a 18:00, con mentores.</p>
+   <ul class="clean">
+    <li>Acompañamiento escolar: comprensión lectora, razonamiento matemático, técnicas de estudio.</li>
+    <li>Acompañamiento lingüístico para alumnado que está aprendiendo español.</li>
+   </ul>
+   <p>El centro desarrolla también el Programa ZTS como medida estratégica de compensación educativa.</p>
+  </div>
+ </div>
+ <div class="band" style="background:var(--tile)">
+  <div class="wrap two">
+   <div>
+    <h2>Biblioteca</h2>
+    <p>Unos 15.000 ejemplares registrados en Biblioweb Séneca, préstamos en todos los recreos, cuatro ordenadores, club de lectura, encuentros con autores y concursos literarios.</p>
+    <div class="row"><a class="btn" href="https://biblioalixar.blogspot.com/">Blog de la biblioteca</a><a class="btn alt" href="https://www.instagram.com/biblioalixar/">@BiblioAlixar</a></div>
+   </div>
+   <div>
+    <h2>Bilingüe en inglés</h2>
+    <p>Somos centro bilingüe desde el curso 2014/15, en ESO y Bachillerato, con metodología AICLE y auxiliar de conversación. La enseñanza bilingüe es para todo el alumnado del grupo, también el de diversificación.</p>
+    <div class="row"><a class="btn alt" href="https://drive.google.com/file/d/1xEbNwcprwkd8zQDUOubQoEEr3LrOpuU5/view">Proyecto Lingüístico</a></div>
+   </div>
+  </div>
+ </div>
+ <div class="band wrap">
+  <h2>Planes y programas</h2>
+  <div class="tiles" style="margin-top:12px">
+   <div class="panel"><h3>De participación de oficio</h3><ul class="chips"><li>Bienestar y Salud</li><li>Organización y funcionamiento de la biblioteca</li><li>Escuela 4.0</li><li>Plan de igualdad de género</li><li>Transformación Digital Educativa</li></ul></div>
+   <div class="panel"><h3>Sin convocatoria específica</h3><ul class="chips"><li>ALDEA</li><li>Aula de Jaque</li><li>ComunicA</li><li>Emprendimiento Educativo</li><li>MAES</li><li>Escuela: Espacio de Paz</li></ul></div>
+   <div class="panel"><h3>Con convocatoria específica</h3><ul class="chips"><li>Competencia Comunicativa en enseñanza bilingüe</li><li>Más Equidad</li><li>PROA y PROA+</li><li>Programa ZTS</li></ul></div>
+   <div class="panel"><h3>Internacionales y otros</h3><ul class="chips"><li>Erasmus+</li><li>Bilingüismo</li><li>Plan de autoprotección</li><li>Compensación educativa</li></ul></div>
+  </div>
+  <div class="two" style="margin-top:28px">
+   <div><h3>Transformación Digital Educativa</h3><p>Nuestro Plan de Actuación Digital organiza la digitalización en tres ámbitos: organización y gestión, enseñanza y aprendizaje, e información y comunicación.</p><a href="https://drive.google.com/file/d/1Gz64XKhL0hry3znm73OwP4CVdlgd2Bon/view">Plan de Actuación Digital</a></div>
+   <div><h3>Uso responsable de la tecnología</h3><p>Regulamos el uso de los móviles y formamos al alumnado en seguridad, privacidad y ciudadanía digital.</p><a href="https://sites.google.com/g.educaand.es/web-iesalixar-org/tde">Tutoriales y preguntas frecuentes</a></div>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<div class="frieze"><svg width="100%" height="22" aria-hidden="true" preserveAspectRatio="none"><rect width="100%" height="22" fill="url(#az)"/></svg></div>
+<footer class="band">
+ <div class="wrap foot">
+  <div>
+   <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgODAwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCI+Cjx0aXRsZT5JRVMgQWxpeGFyIMK3IENhc3RpbGxlamEgZGUgbGEgQ3Vlc3RhPC90aXRsZT4KPGRlZnM+PGNsaXBQYXRoIGlkPSJpbiI+PGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIyMTQiLz48L2NsaXBQYXRoPjwvZGVmcz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIzNTAiIGZpbGw9IiNmZmYiLz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIzMzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIyMCIvPgo8Y2lyY2xlIGN4PSI0MDAiIGN5PSI0MDAiIHI9IjMzOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZlMTJlIiBzdHJva2Utd2lkdGg9IjE0Ii8+CjxjaXJjbGUgY3g9IjQwMCIgY3k9IjQwMCIgcj0iMjIxIiBmaWxsPSJub25lIiBzdHJva2U9IiMxYTFhMWEiIHN0cm9rZS13aWR0aD0iMjAiLz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIyMjEiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZTEyZSIgc3Ryb2tlLXdpZHRoPSIxNCIvPgo8ZyBjbGlwLXBhdGg9InVybCgjaW4pIj4KPHBhdGggZD0iTTE1MCA0NzYgQzI0MCA0NTIsMzIwIDQzOCw0MDAgNDQwIEM0ODAgNDQyLDU2MCA0MzgsNjYwIDQ1NiBMNjYwIDY2MCBMMTUwIDY2MFoiIGZpbGw9IiMwM2NhM2EiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KPHBhdGggZD0iTTMwMCA1NDggQzMxNSA1MjUsMzQ1IDUyMiwzNjggNTQwIEMzNTUgNTQ2LDMyMCA1NTAsMzAwIDU0OFoiIGZpbGw9IiM2NTY2MjAiLz48cGF0aCBkPSJNNDE4IDU0MCBDNDMwIDUyMiw0NTUgNTIwLDQ3OCA1MzQgQzQ2NiA1NDAsNDQwIDU0NCw0MTggNTQwWiIgZmlsbD0iIzY1NjYyMCIvPjxwYXRoIGQ9Ik00NzIgNDk2IEM0ODggNDc0LDUyMCA0NzQsNTQ2IDQ4OCBDNTMwIDQ5Niw1MDAgNDk5LDQ3MiA0OTZaIiBmaWxsPSIjNjU2NjIwIi8+CjxwYXRoIGQ9Ik0yNTYgMzM4IEwyNTYuMCAzMjcgTDI2NC4wIDMyNyBMMjY0LjAgMzM4IEwyNzIuMCAzMzggTDI3Mi4wIDMyNyBMMjgwLjAgMzI3IEwyODAuMCAzMzggTDI4OC4wIDMzOCBMMjg4LjAgMzI3IEwyOTYuMCAzMjcgTDI5Ni4wIDMzOCBMMjk2IDQ2MiBMMjU2IDQ2MiBaIiBmaWxsPSIjZjdkYjI0IiBzdHJva2U9IiMxYTFhMWEiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0yOTQgMzUyIEwyOTQuMCAzNDEgTDMwMC41IDM0MSBMMzAwLjUgMzUyIEwzMDcuMSAzNTIgTDMwNy4xIDM0MSBMMzEzLjYgMzQxIEwzMTMuNiAzNTIgTDMyMC4xIDM1MiBMMzIwLjEgMzQxIEwzMjYuNyAzNDEgTDMyNi43IDM1MiBMMzMzLjIgMzUyIEwzMzMuMiAzNDEgTDMzOS43IDM0MSBMMzM5LjcgMzUyIEwzNDYuMyAzNTIgTDM0Ni4zIDM0MSBMMzUyLjggMzQxIEwzNTIuOCAzNTIgTDM1OS4zIDM1MiBMMzU5LjMgMzQxIEwzNjUuOSAzNDEgTDM2NS45IDM1MiBMMzcyLjQgMzUyIEwzNzIuNCAzNDEgTDM3OC45IDM0MSBMMzc4LjkgMzUyIEwzODUuNSAzNTIgTDM4NS41IDM0MSBMMzkyLjAgMzQxIEwzOTIuMCAzNTIgTDM5MiA0NTggTDI5NCA0NTggWiIgZmlsbD0iI2YzZDYyNSIgc3Ryb2tlPSIjMWExYTFhIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjc3IDQzMmgxNiBNMjkwIDQwNWgxMiBNMzM0IDQyOGg5IE0yNjUgNDMxaDEyIE0zNDYgMzY2aDEyIE0zNDEgMzg0aDE3IE0zNjEgMzY4aDggTTMyMiA0MzloMTIgTTI4NiAzOTloOCBNMjg2IDQwMGgxMyBNMjg4IDM4NGgxMCBNMzEzIDM4OWg4IE0zNTQgNDA5aDE0IiBzdHJva2U9IiM3YTZhMTAiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTMwMCAzNjB2OTJNMzQwIDM1OHY5NiIgc3Ryb2tlPSIjYzliMjFjIiBzdHJva2Utd2lkdGg9IjUiLz4KPHBhdGggZD0iTTM5MCAyNjIgTDM5MC4wIDI1MSBMMzk2LjUgMjUxIEwzOTYuNSAyNjIgTDQwMy4xIDI2MiBMNDAzLjEgMjUxIEw0MDkuNiAyNTEgTDQwOS42IDI2MiBMNDE2LjIgMjYyIEw0MTYuMiAyNTEgTDQyMi43IDI1MSBMNDIyLjcgMjYyIEw0MjkuMyAyNjIgTDQyOS4zIDI1MSBMNDM1LjggMjUxIEw0MzUuOCAyNjIgTDQ0Mi40IDI2MiBMNDQyLjQgMjUxIEw0NDguOSAyNTEgTDQ0OC45IDI2MiBMNDU1LjUgMjYyIEw0NTUuNSAyNTEgTDQ2Mi4wIDI1MSBMNDYyLjAgMjYyIEw0NjIgNDQ2IEwzOTAgNDQ2IFoiIGZpbGw9IiNmYmUyMjUiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTQzOCA0MjZoOSBNNDAyIDQwOWgxNSBNNDI2IDMyOGgxNCBNNDIzIDM3MGgxMCBNNDE2IDM0MWgxNSBNNDQwIDQyNmgxMyBNNDE3IDMyMmg4IE0zOTkgMzUyaDExIE00MTQgNDE3aDEzIE00MjIgMzE3aDggTTQxMiAzMDJoMTMiIHN0cm9rZT0iIzdhNmExMCIgc3Ryb2tlLXdpZHRoPSIxLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgo8cGF0aCBkPSJNMzk4IDI3MHYxNzAiIHN0cm9rZT0iI2QzYmYxZiIgc3Ryb2tlLXdpZHRoPSI2Ii8+CjxwYXRoIGQ9Ik00NjAgMjk0IEw0NjAuMCAyODMgTDQ2Ny44IDI4MyBMNDY3LjggMjk0IEw0NzUuNiAyOTQgTDQ3NS42IDI4MyBMNDgzLjMgMjgzIEw0ODMuMyAyOTQgTDQ5MS4xIDI5NCBMNDkxLjEgMjgzIEw0OTguOSAyODMgTDQ5OC45IDI5NCBMNTA2LjcgMjk0IEw1MDYuNyAyODMgTDUxNC40IDI4MyBMNTE0LjQgMjk0IEw1MjIuMiAyOTQgTDUyMi4yIDI4MyBMNTMwLjAgMjgzIEw1MzAuMCAyOTQgTDUzMCA0MzggTDQ2MCA0MzggWiIgZmlsbD0iI2ZmYTMwZiIgc3Ryb2tlPSIjMWExYTFhIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNDc4IDM3MmgxMiBNNDkyIDM4Mmg5IE00NjkgNDA2aDExIE00NzcgNDI0aDEzIE01MDEgMzY1aDE0IE00NzQgMzgzaDE3IE00ODkgMzk1aDE1IE00NzEgMzk3aDE0IiBzdHJva2U9IiM5YTVhMDAiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTI4NiAzODhoLTJ2MTJoNHpNNDIwIDMwMHYxNE00MzYgMzMwdjE0TTQ5NSAzMzB2MTIiIHN0cm9rZT0iIzFhMWExYSIgc3Ryb2tlLXdpZHRoPSIzIi8+CjwvZz4KPGcgZmlsbD0iIzAzY2EzYSI+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5MS4xMiAyNDEuODQpIHJvdGF0ZSgtNTIuODcpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtMzk4LjUgMCkiIGQ9Ik00NjQgMTAwIDYzMSA3NCA2MTggMEgtMjBMLTcgNzRMMTY5IDEwMEwzNzAgMTI0MUwyMDMgMTI2OEwyMTYgMTM0MUg4NTVMODQyIDEyNjhMNjY1IDEyNDFaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwOC40NSAyMjEuMjUpIHJvdGF0ZSgtNDYuOTgpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtMjU2LjAgMCkiIGQ9Ik0xODEgLTI5UTExMiAtMjkgNjMuNSAxOS4wUTE1IDY3IDE1IDEzN1ExNSAyMDYgNjMuMCAyNTQuNVExMTEgMzAzIDE4MSAzMDNRMjUwIDMwMyAyOTguNSAyNTUuMFEzNDcgMjA3IDM0NyAxMzdRMzQ3IDY4IDI5OS4wIDE5LjVRMjUxIC0yOSAxODEgLTI5WiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzYuMTEgMTk1LjU5KSByb3RhdGUoLTM4LjcyKSBzY2FsZSgwLjAzODA5IC0wLjAzODA5KSB0cmFuc2xhdGUoLTY4My4wIDApIiBkPSJNMzc1IDEyNDIgMjA4IDEyNjggMjIxIDEzNDFIMTI3M0wxMjEzIDEwMDBIMTEyMkwxMTI4IDEyMTdRMTAxOSAxMjMxIDgwNyAxMjMxSDY2OUw1ODIgNzM5SDg2M0w5MjAgODg3SDEwMDlMOTM2IDQ3NUg4NDdMODQzIDYyN0g1NjJMNDcxIDExMEg2NTRROTA3IDExMCA5OTIgMTI2TDEwOTUgMzc0SDExODZMMTEwMiAwSC0xNUwtMyA3M0wxNzQgMTAwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNjcuMTcgMTc0LjE3KSByb3RhdGUoLTMwLjQ2KSBzY2FsZSgwLjAzODA5IC0wLjAzODA5KSB0cmFuc2xhdGUoLTI1Ni4wIDApIiBkPSJNMTgxIC0yOVExMTIgLTI5IDYzLjUgMTkuMFExNSA2NyAxNSAxMzdRMTUgMjA2IDYzLjAgMjU0LjVRMTExIDMwMyAxODEgMzAzUTI1MCAzMDMgMjk4LjUgMjU1LjBRMzQ3IDIwNyAzNDcgMTM3UTM0NyA2OCAyOTkuMCAxOS41UTI1MSAtMjkgMTgxIC0yOVoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjk3LjAwIDE1OS4xMCkgcm90YXRlKC0yMy4xNSkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC01NjkuNSAwKSIgZD0iTTQzMiAtMjBRMjE1IC0yMCAzNyA1MUwxMDEgNDExSDE4OUwxOTAgMTk2UTIyNCAxNDcgMjk2LjAgMTE0LjBRMzY4IDgxIDQ0OSA4MVE1OTUgODEgNjc0LjAgMTQyLjBRNzUzIDIwMyA3NTMgMzExUTc1MyAzNjUgNzI5LjAgNDA1LjBRNzA1IDQ0NSA2NjUuNSA0NzcuNVE2MjYgNTEwIDU3Ni4wIDUzOC41UTUyNiA1NjcgNDczLjUgNTk2LjVRNDIxIDYyNiAzNzEuMCA2NjAuNVEzMjEgNjk1IDI4MS41IDc0MC4wUTI0MiA3ODUgMjE4LjAgODQzLjBRMTk0IDkwMSAxOTQgOTc5UTE5NCAxMTYzIDMyNy41IDEyNTkuNVE0NjEgMTM1NiA3MTcgMTM1NlE4ODggMTM1NiAxMDUzIDEzMTNMOTk3IDk5NEg5MDhMOTAxIDExOTBRODIwIDEyNTIgNjkwIDEyNTJRNTc3IDEyNTIgNTEyLjUgMTIwMy4wUTQ0OCAxMTU0IDQ0OCAxMDY5UTQ0OCAxMDA5IDQ5MS41IDk1OC41UTUzNSA5MDggNjI3IDg1N1E3NjEgNzgyIDgyMC41IDc0Mi41UTg4MCA3MDMgOTIxLjAgNjU4LjBROTYyIDYxMyA5ODYuNSA1NTYuMFExMDExIDQ5OSAxMDExIDQyM1ExMDExIDIwNyA4NjIuNSA5My41UTcxNCAtMjAgNDMyIC0yMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI4LjUwIDE0Ny45NSkgcm90YXRlKC0xNS44NCkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC0yNTYuMCAwKSIgZD0iTTE4MSAtMjlRMTEyIC0yOSA2My41IDE5LjBRMTUgNjcgMTUgMTM3UTE1IDIwNiA2My4wIDI1NC41UTExMSAzMDMgMTgxIDMwM1EyNTAgMzAzIDI5OC41IDI1NS4wUTM0NyAyMDcgMzQ3IDEzN1EzNDcgNjggMjk5LjAgMTkuNVEyNTEgLTI5IDE4MSAtMjlaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM4Ni44NSAxMzguMzMpIHJvdGF0ZSgtMi44OCkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTMwMiA3MyAyODggMEgtMTA2TC05MiA3M0wxMSAxMDBMNjc5IDEzNTJIOTE5TDExNzMgMTAwTDEyODIgNzNMMTI2OCAwSDcxOUw3MzMgNzNMODcxIDEwMEw4MTAgNDQ3SDMzOEwxNTQgMTAwWk02ODkgMTExOCAzOTQgNTU3SDc5MFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDM4LjU0IDE0MC44NSkgcm90YXRlKDguNDYpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtNjI1LjUgMCkiIGQ9Ik00NzAgMTA2SDU4M1E2NzkgMTA2IDc5OS41IDExMi41UTkyMCAxMTkgOTU4IDEyNkwxMDc1IDQwNUgxMTU5TDEwNzAgMEgtMTVMLTMgNzNMMTc0IDEwMEwzNzUgMTI0MkwyMDkgMTI2OEwyMjIgMTM0MUg4ODVMODcyIDEyNjhMNjcwIDEyNDJaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ3OC40NSAxNTAuMDIpIHJvdGF0ZSgxNy40Mikgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC0zOTguNSAwKSIgZD0iTTQ2NCAxMDAgNjMxIDc0IDYxOCAwSC0yMEwtNyA3NEwxNjkgMTAwTDM3MCAxMjQxTDIwMyAxMjY4TDIxNiAxMzQxSDg1NUw4NDIgMTI2OEw2NjUgMTI0MVoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTE4LjQxIDE2Ni4yOSkgcm90YXRlKDI2Ljg3KSBzY2FsZSgwLjAzODA5IC0wLjAzODA5KSB0cmFuc2xhdGUoLTY4My4wIDApIiBkPSJNMjU3IDEwMCA0MDggNzMgMzk2IDBILTUyTC00MCA3M0wxMTMgMTAwTDU3NCA2MzVMMzM2IDEyNDJMMTkwIDEyNjhMMjAzIDEzNDFIODE2TDgwMyAxMjY4TDYzOCAxMjQyTDc4MSA4NzVMMTA5NyAxMjQyTDk0NiAxMjY4TDk1OSAxMzQxSDE0MDhMMTM5NSAxMjY4TDEyNDIgMTI0Mkw4MjYgNzYwTDEwODUgMTAwTDEyMzIgNzNMMTIyMCAwSDYwN0w2MTkgNzNMNzg0IDEwMEw2MTkgNTIwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NjMuNzYgMTk1LjQ4KSByb3RhdGUoMzguNjgpIHNjYWxlKDAuMDM4MDkgLTAuMDM4MDkpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwMi4xNiAyMzMuMzQpIHJvdGF0ZSg1MC41MCkgc2NhbGUoMC4wMzgwOSAtMC4wMzgwOSkgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTU1MiA1NjggNDY5IDEwMCA2MzYgNzMgNjI0IDBILTNMOSA3M0wxNzMgMTAwTDM3NCAxMjQyTDIwNyAxMjY4TDIyMCAxMzQxSDc1NVExMDE3IDEzNDEgMTE0My4wIDEyNTguMFExMjY5IDExNzUgMTI2OSAxMDAzUTEyNjkgODQ3IDExODQuNSA3NDMuMFExMTAwIDYzOSA5NDAgNTk2TDExNDEgMTAwTDEyODggNzNMMTI3NiAwSDg3Nkw2NjggNTY4Wk02MjYgNjc4UTc5MCA2NzggODgzLjAgNzU5LjVROTc2IDg0MSA5NzYgOTg3UTk3NiAxMTE3IDkxNS41IDExNzQuMFE4NTUgMTIzMSA3MzggMTIzMUg2NjlMNTcxIDY3OFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODguMjkgNDEzLjQwKSByb3RhdGUoODcuNTQpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik02NzAgLTIwUTM4NSAtMjAgMjI3LjUgMTI3LjVRNzAgMjc1IDcwIDUzMVE3MCA3NzcgMTc0LjAgOTY0LjVRMjc4IDExNTIgNDcxLjAgMTI1NC4wUTY2NCAxMzU2IDkxMiAxMzU2UTExMzggMTM1NiAxMzg1IDEzMDRMMTMzMiA5NjdIMTI0OFYxMTYxUTExOTQgMTIwNCAxMTE3LjUgMTIyNy41UTEwNDEgMTI1MSA5NTcgMTI1MVE3OTIgMTI1MSA2NjAuNSAxMTU5LjBRNTI5IDEwNjcgNDU2LjAgODk5LjVRMzgzIDczMiAzODMgNTIyUTM4MyAzMTUgNDc1LjAgMTk5LjBRNTY3IDgzIDczNCA4M1E4MzIgODMgOTMxLjAgMTExLjVRMTAzMCAxNDAgMTA5MSAxODRMMTE2OCA0MDRIMTI1M0wxMTg3IDY0UTEwNzQgMjcgOTM3LjAgMy41UTgwMCAtMjAgNjcwIC0yMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTQuNDkgNDYzLjMyKSByb3RhdGUoNzguMjkpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNy4yMCA1MDcuNzYpIHJvdGF0ZSg2OS44MCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC01NjkuNSAwKSIgZD0iTTQzMiAtMjBRMjE1IC0yMCAzNyA1MUwxMDEgNDExSDE4OUwxOTAgMTk2UTIyNCAxNDcgMjk2LjAgMTE0LjBRMzY4IDgxIDQ0OSA4MVE1OTUgODEgNjc0LjAgMTQyLjBRNzUzIDIwMyA3NTMgMzExUTc1MyAzNjUgNzI5LjAgNDA1LjBRNzA1IDQ0NSA2NjUuNSA0NzcuNVE2MjYgNTEwIDU3Ni4wIDUzOC41UTUyNiA1NjcgNDczLjUgNTk2LjVRNDIxIDYyNiAzNzEuMCA2NjAuNVEzMjEgNjk1IDI4MS41IDc0MC4wUTI0MiA3ODUgMjE4LjAgODQzLjBRMTk0IDkwMSAxOTQgOTc5UTE5NCAxMTYzIDMyNy41IDEyNTkuNVE0NjEgMTM1NiA3MTcgMTM1NlE4ODggMTM1NiAxMDUzIDEzMTNMOTk3IDk5NEg5MDhMOTAxIDExOTBRODIwIDEyNTIgNjkwIDEyNTJRNTc3IDEyNTIgNTEyLjUgMTIwMy4wUTQ0OCAxMTU0IDQ0OCAxMDY5UTQ0OCAxMDA5IDQ5MS41IDk1OC41UTUzNSA5MDggNjI3IDg1N1E3NjEgNzgyIDgyMC41IDc0Mi41UTg4MCA3MDMgOTIxLjAgNjU4LjBROTYyIDYxMyA5ODYuNSA1NTYuMFExMDExIDQ5OSAxMDExIDQyM1ExMDExIDIwNyA4NjIuNSA5My41UTcxNCAtMjAgNDMyIC0yMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI1LjM0IDU0OC4wMCkgcm90YXRlKDYxLjY4KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTYyNS41IDApIiBkPSJNMTY3IDAgMTc5IDczIDM5NyAxMDAgNTk3IDEyMzVINTM2UTQ4MCAxMjM1IDQxMC41IDEyMjguMFEzNDEgMTIyMSAzMTEgMTIxNUwyMzYgOTY2SDE0OUwyMTUgMTM0MUgxMzE4TDEyNTIgOTY2SDExNjRMMTE3NyAxMjE1UTExNDkgMTIyMSAxMDc0LjUgMTIyNy4wUTEwMDAgMTIzMyA5NTIgMTIzM0g4OTNMNjkzIDEwMEw5MDEgNzNMODg5IDBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0NS4zNSA1ODAuMjcpIHJvdGF0ZSg1NC43MCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC0zOTguNSAwKSIgZD0iTTQ2NCAxMDAgNjMxIDc0IDYxOCAwSC0yMEwtNyA3NEwxNjkgMTAwTDM3MCAxMjQxTDIwMyAxMjY4TDIxNiAxMzQxSDg1NUw4NDIgMTI2OEw2NjUgMTI0MVoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTY5LjE0IDYwOS44OCkgcm90YXRlKDQ3LjczKSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTYyNS41IDApIiBkPSJNNDcwIDEwNkg1ODNRNjc5IDEwNiA3OTkuNSAxMTIuNVE5MjAgMTE5IDk1OCAxMjZMMTA3NSA0MDVIMTE1OUwxMDcwIDBILTE1TC0zIDczTDE3NCAxMDBMMzc1IDEyNDJMMjA5IDEyNjhMMjIyIDEzNDFIODg1TDg3MiAxMjY4TDY3MCAxMjQyWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDIuNjMgNjQxLjY0KSByb3RhdGUoMzkuMjQpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjI1LjUgMCkiIGQ9Ik00NzAgMTA2SDU4M1E2NzkgMTA2IDc5OS41IDExMi41UTkyMCAxMTkgOTU4IDEyNkwxMDc1IDQwNUgxMTU5TDEwNzAgMEgtMTVMLTMgNzNMMTc0IDEwMEwzNzUgMTI0MkwyMDkgMTI2OEwyMjIgMTM0MUg4ODVMODcyIDEyNjhMNjcwIDEyNDJaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI0Mi4yMyA2NjkuMTcpIHJvdGF0ZSgzMC4zOCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTM3NSAxMjQyIDIwOCAxMjY4IDIyMSAxMzQxSDEyNzNMMTIxMyAxMDAwSDExMjJMMTEyOCAxMjE3UTEwMTkgMTIzMSA4MDcgMTIzMUg2NjlMNTgyIDczOUg4NjNMOTIwIDg4N0gxMDA5TDkzNiA0NzVIODQ3TDg0MyA2MjdINTYyTDQ3MSAxMTBINjU0UTkwNyAxMTAgOTkyIDEyNkwxMDk1IDM3NEgxMTg2TDExMDIgMEgtMTVMLTMgNzNMMTc0IDEwMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjgxLjgwIDY4OC43NCkgcm90YXRlKDIyLjI2KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTUxMi4wIDApIiBkPSJNNjEzIDEyNDIgNDQ2IDEyNjggNDU5IDEzNDFIMTA3OEwxMDY1IDEyNjhMOTA4IDEyNDJMNzY2IDQzMlE3MjggMjE2IDU5NC41IDk4LjBRNDYxIC0yMCAyNDQgLTIwUTkyIC0yMCAtNCAxMEw1MCAzMTRIMTMzTDEzNyAxMzVRMTY5IDg2IDI1MCA4NlEzMjQgODYgMzc2LjAgMTM3LjBRNDI4IDE4OCA0NDMgMjc2WiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMjMuNzMgNzAyLjUzKSByb3RhdGUoMTQuMTUpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM5NC44NSA3MTEuOTYpIHJvdGF0ZSgwLjk1KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTczOS41IDApIiBkPSJNMTEyMCA3NzRRMTEyMCAxMjMxIDcwNSAxMjMxSDY2OEw0NzEgMTE0UTU1NiAxMDYgNTk1IDEwNlE4MzkgMTA2IDk3OS41IDI4NS4wUTExMjAgNDY0IDExMjAgNzc0Wk03NDIgMTM0MVExMDc5IDEzNDEgMTI1NS4wIDExOTcuNVExNDMxIDEwNTQgMTQzMSA3ODhRMTQzMSA1NDkgMTMyOS41IDM2OC41UTEyMjggMTg4IDEwMzguNSA5Mi4wUTg0OSAtNCA1OTkgLTRMMTgwIDBILTE1TC0zIDczTDE3NCAxMDBMMzc1IDEyNDJMMjA4IDEyNjhMMjIxIDEzNDFaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ny4wNyA3MDguNDMpIHJvdGF0ZSgtOC42OCkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTM3NSAxMjQyIDIwOCAxMjY4IDIyMSAxMzQxSDEyNzNMMTIxMyAxMDAwSDExMjJMMTEyOCAxMjE3UTEwMTkgMTIzMSA4MDcgMTIzMUg2NjlMNTgyIDczOUg4NjNMOTIwIDg4N0gxMDA5TDkzNiA0NzVIODQ3TDg0MyA2MjdINTYyTDQ3MSAxMTBINjU0UTkwNyAxMTAgOTkyIDEyNkwxMDk1IDM3NEgxMTg2TDExMDIgMEgtMTVMLTMgNzNMMTc0IDEwMFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyLjQ0IDY5MS4wMykgcm90YXRlKC0yMS4xMikgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02MjUuNSAwKSIgZD0iTTQ3MCAxMDZINTgzUTY3OSAxMDYgNzk5LjUgMTEyLjVROTIwIDExOSA5NTggMTI2TDEwNzUgNDA1SDExNTlMMTA3MCAwSC0xNUwtMyA3M0wxNzQgMTAwTDM3NSAxMjQyTDIwOSAxMjY4TDIyMiAxMzQxSDg4NUw4NzIgMTI2OEw2NzAgMTI0MloiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTU1Ljk1IDY3MC4yMykgcm90YXRlKC0yOS45OSkgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTMwMiA3MyAyODggMEgtMTA2TC05MiA3M0wxMSAxMDBMNjc5IDEzNTJIOTE5TDExNzMgMTAwTDEyODIgNzNMMTI2OCAwSDcxOUw3MzMgNzNMODcxIDEwMEw4MTAgNDQ3SDMzOEwxNTQgMTAwWk02ODkgMTExOCAzOTQgNTU3SDc5MFoiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjEyLjA2IDYyOC44NSkgcm90YXRlKC00Mi44Mikgc2NhbGUoMC4wMzYxMyAtMC4wMzYxMykgdHJhbnNsYXRlKC02ODMuMCAwKSIgZD0iTTY3MCAtMjBRMzg1IC0yMCAyMjcuNSAxMjcuNVE3MCAyNzUgNzAgNTMxUTcwIDc3NyAxNzQuMCA5NjQuNVEyNzggMTE1MiA0NzEuMCAxMjU0LjBRNjY0IDEzNTYgOTEyIDEzNTZRMTEzOCAxMzU2IDEzODUgMTMwNEwxMzMyIDk2N0gxMjQ4VjExNjFRMTE5NCAxMjA0IDExMTcuNSAxMjI3LjVRMTA0MSAxMjUxIDk1NyAxMjUxUTc5MiAxMjUxIDY2MC41IDExNTkuMFE1MjkgMTA2NyA0NTYuMCA4OTkuNVEzODMgNzMyIDM4MyA1MjJRMzgzIDMxNSA0NzUuMCAxOTkuMFE1NjcgODMgNzM0IDgzUTgzMiA4MyA5MzEuMCAxMTEuNVExMDMwIDE0MCAxMDkxIDE4NEwxMTY4IDQwNEgxMjUzTDExODcgNjRRMTA3NCAyNyA5MzcuMCAzLjVRODAwIC0yMCA2NzAgLTIwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NDcuMzMgNTkwLjE5KSByb3RhdGUoLTUyLjQ0KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTczOS41IDApIiBkPSJNMTY3IDEyNjggMTgwIDEzNDFINzk5TDc4NiAxMjY4TDYwOSAxMjQyTDQ5NiA1ODZRNDczIDQ1NiA0NzMgMzg5UTQ3MyAxMjIgNzQwIDEyMlE5MDEgMTIyIDEwMDMuNSAyMDkuMFExMTA2IDI5NiAxMTM2IDQ2M0wxMjczIDEyNDJMMTA5OCAxMjY4TDExMTEgMTM0MUgxNTY3TDE1NTQgMTI2OEwxMzk3IDEyNDJMMTI2MiA0NzFRMTIxNyAyMTggMTA3NC41IDk5LjVROTMyIC0xOSA2ODkgLTE5UTQ0NSAtMTkgMzEyLjUgODkuNVExODAgMTk4IDE4MCAzOTlRMTgwIDQ2MyAyMDAgNTgzTDMxNCAxMjQyWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NzUuNjQgNTQ2LjE3KSByb3RhdGUoLTYyLjA2KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTY4My4wIDApIiBkPSJNMzc1IDEyNDIgMjA4IDEyNjggMjIxIDEzNDFIMTI3M0wxMjEzIDEwMDBIMTEyMkwxMTI4IDEyMTdRMTAxOSAxMjMxIDgwNyAxMjMxSDY2OUw1ODIgNzM5SDg2M0w5MjAgODg3SDEwMDlMOTM2IDQ3NUg4NDdMODQzIDYyN0g1NjJMNDcxIDExMEg2NTRROTA3IDExMCA5OTIgMTI2TDEwOTUgMzc0SDExODZMMTEwMiAwSC0xNUwtMyA3M0wxNzQgMTAwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2OTQuMjEgNTAzLjg1KSByb3RhdGUoLTcwLjU2KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTU2OS41IDApIiBkPSJNNDMyIC0yMFEyMTUgLTIwIDM3IDUxTDEwMSA0MTFIMTg5TDE5MCAxOTZRMjI0IDE0NyAyOTYuMCAxMTQuMFEzNjggODEgNDQ5IDgxUTU5NSA4MSA2NzQuMCAxNDIuMFE3NTMgMjAzIDc1MyAzMTFRNzUzIDM2NSA3MjkuMCA0MDUuMFE3MDUgNDQ1IDY2NS41IDQ3Ny41UTYyNiA1MTAgNTc2LjAgNTM4LjVRNTI2IDU2NyA0NzMuNSA1OTYuNVE0MjEgNjI2IDM3MS4wIDY2MC41UTMyMSA2OTUgMjgxLjUgNzQwLjBRMjQyIDc4NSAyMTguMCA4NDMuMFExOTQgOTAxIDE5NCA5NzlRMTk0IDExNjMgMzI3LjUgMTI1OS41UTQ2MSAxMzU2IDcxNyAxMzU2UTg4OCAxMzU2IDEwNTMgMTMxM0w5OTcgOTk0SDkwOEw5MDEgMTE5MFE4MjAgMTI1MiA2OTAgMTI1MlE1NzcgMTI1MiA1MTIuNSAxMjAzLjBRNDQ4IDExNTQgNDQ4IDEwNjlRNDQ4IDEwMDkgNDkxLjUgOTU4LjVRNTM1IDkwOCA2MjcgODU3UTc2MSA3ODIgODIwLjUgNzQyLjVRODgwIDcwMyA5MjEuMCA2NTguMFE5NjIgNjEzIDk4Ni41IDU1Ni4wUTEwMTEgNDk5IDEwMTEgNDIzUTEwMTEgMjA3IDg2Mi41IDkzLjVRNzE0IC0yMCA0MzIgLTIwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MDUuOTIgNDYxLjI5KSByb3RhdGUoLTc4LjY3KSBzY2FsZSgwLjAzNjEzIC0wLjAzNjEzKSB0cmFuc2xhdGUoLTYyNS41IDApIiBkPSJNMTY3IDAgMTc5IDczIDM5NyAxMDAgNTk3IDEyMzVINTM2UTQ4MCAxMjM1IDQxMC41IDEyMjguMFEzNDEgMTIyMSAzMTEgMTIxNUwyMzYgOTY2SDE0OUwyMTUgMTM0MUgxMzE4TDEyNTIgOTY2SDExNjRMMTE3NyAxMjE1UTExNDkgMTIyMSAxMDc0LjUgMTIyNy4wUTEwMDAgMTIzMyA5NTIgMTIzM0g4OTNMNjkzIDEwMEw5MDEgNzNMODg5IDBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcxMS43MSA0MTMuNDApIHJvdGF0ZSgtODcuNTQpIHNjYWxlKDAuMDM2MTMgLTAuMDM2MTMpIHRyYW5zbGF0ZSgtNjgzLjAgMCkiIGQ9Ik0zMDIgNzMgMjg4IDBILTEwNkwtOTIgNzNMMTEgMTAwTDY3OSAxMzUySDkxOUwxMTczIDEwMEwxMjgyIDczTDEyNjggMEg3MTlMNzMzIDczTDg3MSAxMDBMODEwIDQ0N0gzMzhMMTU0IDEwMFpNNjg5IDExMTggMzk0IDU1N0g3OTBaIi8+CjxjaXJjbGUgY3g9IjEzNS4wIiBjeT0iMzAzLjYiIHI9IjkiLz4KPGNpcmNsZSBjeD0iNjY1LjAiIGN5PSIzMDMuNiIgcj0iOSIvPgo8L2c+Cjwvc3ZnPg==" alt="Escudo del IES Alixar" width="88" height="88" style="background:#fff;border-radius:50%;margin-bottom:10px">
+   <h3>IES Alixar</h3>
+   <p style="margin:0">Avda. de la Unidad, s/n · 41950 Castilleja de la Cuesta (Sevilla)<br>Teléfono: 955 62 25 66</p>
+  </div>
+  <div><h3>Estudiar</h3><ul><li><a href="#oferta">ESO y Bachillerato</a></li><li><a href="#fp">Formación Profesional</a></li><li><a href="#acredita">ACREDITA</a></li><li><a href="#secretaria">Secretaría</a></li></ul></div>
+  <div><h3>Profesorado</h3><ul><li><a href="https://partedeguardia.iesalixar.org/">Parte de guardia</a></li><li><a href="https://educacionadistancia.juntadeandalucia.es/centros/sevilla/login/index.php">Moodle Centros</a></li><li><a href="https://drive.google.com/drive/folders/1JPtLXRM_8I23KhPwzJLqeyeZYA8AfTwF">Plan de Centro</a></li></ul></div>
+  <div><h3>Síguenos</h3><ul><li><a href="https://www.instagram.com/ies_alixar/">Instagram @ies_alixar</a></li><li><a href="https://www.instagram.com/biblioalixar/">Instagram @BiblioAlixar</a></li><li><a href="https://sites.google.com/g.educaand.es/web-iesalixar-org/politica-de-privacidad">Privacidad y cookies</a></li></ul></div>
+ </div>
+  <p class="estilo" data-estilo>Estilo visual de la web:
+   <a href="index.html" data-t="atrevida">Atrevida</a> ·
+   <a href="clasica.html" data-t="clasica">Clásica</a> ·
+   <a href="institucional.html" data-t="institucional">Institucional</a>
+  </p>
+</footer>
+
+<script>
+{
+/* ---------- Instagram (automático) ----------
+   Las últimas publicaciones se cargan solas desde un feed JSON de Behold (behold.so),
+   conectado a cada cuenta profesional de Instagram. Pega aquí la URL de cada feed
+   (https://feeds.behold.so/XXXX). Si falta o no responde, se muestran los mosaicos
+   que enlazan a los perfiles. */
+const FEEDS={ies_alixar:'',biblioalixar:''};
+const labels={ies_alixar:'@ies_alixar',biblioalixar:'@BiblioAlixar'};
+const pats=['az','az2','az3'];
+const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tile=(acc,i)=>`<a class="post" href="https://www.instagram.com/${acc}/" aria-label="Abrir ${labels[acc]} en Instagram"><svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100" height="100" fill="url(#${pats[(i+(acc==='biblioalixar'?1:0))%3]})"/></svg><em>${labels[acc]}</em></a>`;
+const real=(acc,p)=>{const img=p.sizes?.medium?.mediaUrl||p.thumbnailUrl||p.mediaUrl;const cap=(p.prunedCaption||p.caption||'').slice(0,120);return `<a class="post" target="_blank" rel="noopener" href="${esc(p.permalink)}" title="${esc(cap)}"><img src="${esc(img)}" alt="${esc(cap||'Publicación de '+labels[acc])}" loading="lazy"><em>${labels[acc]}</em></a>`};
+const box=document.querySelector('[data-ig="home"]');
+box.innerHTML=[0,1,2,3,4,5].map(i=>tile(i<4?'ies_alixar':'biblioalixar',i)).join('');
+const load=async acc=>{if(!FEEDS[acc])return[];try{const r=await fetch(FEEDS[acc]);const d=await r.json();return(d.posts||d).map(p=>[acc,p])}catch(e){return[]}};
+Promise.all([load('ies_alixar'),load('biblioalixar')]).then(([a,b])=>{
+ const mix=[...a.slice(0,4),...b.slice(0,2)];
+ for(const x of [...a.slice(4),...b.slice(2)]){if(mix.length>=6)break;mix.push(x)}
+ if(!mix.length)return;
+ box.innerHTML=mix.slice(0,6).map(([acc,p])=>real(acc,p)).join('');
+ const n=document.querySelector('[data-ig-note]');if(n)n.remove();
+});
+
+/* ---------- Departamentos ---------- */
+const deps=[['Biología y Geología','iesalixar-byg'],['Cultura Clásica','iesalixar-departamentoclsicas'],['Dibujo','iesalixar-dibujo'],['Economía','iesalixar-departamentoeconoma'],['Educación Física','dptoeducacionfisica-alixar'],['Filosofía','iesalixar-filosofia'],['Física y Química','iesalixar-fyq'],['FOL','iesalixar-departamento-de-fol'],['Francés','iesalixar-dpto-frances'],['Geografía e Historia','iesalixar-geografiaehistoria'],['Inglés','iesalixar-ingles'],['Informática','iesalixar-dpto-informatica'],['Lengua Castellana y Literatura','iesalixar-lengua'],['Matemáticas','dpto-matematicas-alixar'],['Música','dpto-musica-alixar'],['Orientación','dpto-orientacion-alixar'],['Química y Salud Ambiental','iesalixar-dpto-qsa'],['Religión','iesalixar-dpto-religiones'],['Sanidad','dpto-sanidad-alixar'],['Tecnología','iesalixar-tecno']];
+document.querySelector('[data-deps]').innerHTML=deps.map(([n,s])=>`<a class="tile" href="https://sites.google.com/g.educaand.es/${s}/inicio"><h3>${n}</h3><p>Web del departamento</p></a>`).join('');
+
+/* ---------- Arcos de la fachada ---------- */
+const g=document.getElementById('arches');
+if(g)g.innerHTML=Array.from({length:7},(_,i)=>`<use href="#arch" x="${190+i*122}" y="140" width="96" height="128"/>`).join('');
+
+/* ---------- Pestañas ---------- */
+for(const tl of document.querySelectorAll('[data-tabs]')){
+ tl.addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  for(const x of tl.querySelectorAll('button'))x.setAttribute('aria-selected',x===b?'true':'false');
+  for(const c of tl.parentElement.querySelectorAll('.course'))c.classList.toggle('on',c.id===b.dataset.t);
+ });
+}
+
+/* ---------- Navegación por páginas ---------- */
+const pages=[...document.querySelectorAll('[data-page]')].map(p=>p.dataset.page);
+const nav=document.getElementById('nav'),menu=document.getElementById('menu');
+const show=()=>{
+ let h=location.hash.slice(1)||'inicio';let target=null;
+ if(!pages.includes(h)){const el=document.getElementById(h);const p=el&&el.closest('[data-page]');if(p){target=el;h=p.dataset.page}else h='inicio'}
+ for(const p of document.querySelectorAll('[data-page]'))p.classList.toggle('on',p.dataset.page===h);
+ for(const a of nav.querySelectorAll('a'))a.getAttribute('href')==='#'+h?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current');
+ nav.classList.remove('open');menu.setAttribute('aria-expanded','false');
+ if(target)target.scrollIntoView();else window.scrollTo(0,0);
+};
+/* ---------- Enlaces externos ---------- */
+for(const a of document.querySelectorAll('a[href^="http"]')){a.target='_blank';a.rel='noopener';if(!a.querySelector('.sr'))a.insertAdjacentHTML('beforeend','<span class="sr"> (se abre en otra pestaña)</span>')}
+window.addEventListener('hashchange',show);
+menu.addEventListener('click',()=>{const o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',o?'true':'false')});
+/* ---------- Selector de estilo visual (atrevida por defecto) ---------- */
+{
+ const cur=document.body.dataset.themeName;
+ const file={atrevida:'index.html',clasica:'clasica.html',institucional:'institucional.html'};
+ let saved=null;try{saved=localStorage.getItem('alixar-estilo')}catch(e){}
+ if(cur==='atrevida'&&saved&&saved!=='atrevida'&&file[saved]&&!sessionStorage.getItem('alixar-salto')){
+  try{sessionStorage.setItem('alixar-salto','1')}catch(e){}
+  location.replace(file[saved]+location.hash);
+ }
+ for(const a of document.querySelectorAll('[data-estilo] a')){
+  if(a.dataset.t===cur)a.setAttribute('aria-current','true');
+  a.addEventListener('click',e=>{e.preventDefault();try{localStorage.setItem('alixar-estilo',a.dataset.t);sessionStorage.removeItem('alixar-salto')}catch(_){}location.href=file[a.dataset.t]+location.hash});
+ }
+}
+show();
+}
+</script>
+</body>
+</html>

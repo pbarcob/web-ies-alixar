@@ -1,0 +1,7 @@
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <pattern id="az" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="#1d4a37"/><path d="M0 40L40 0" stroke="#2c5f49" stroke-width="2"/></pattern>
+  <pattern id="az2" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="#e9ece7"/><path d="M0 20h40M20 0v40" stroke="#cfd5cd" stroke-width="2"/></pattern>
+  <pattern id="az3" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="#b8912a"/><path d="M0 40L40 0" stroke="#c9a346" stroke-width="2"/></pattern>
+ </defs>
+</svg>
